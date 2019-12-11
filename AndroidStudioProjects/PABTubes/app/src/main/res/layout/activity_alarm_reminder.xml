@@ -14,7 +14,7 @@
         android:background="@color/colorPrimary"
         app:itemBackground="@color/colorPrimary"
         app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@android:color/white"
+        app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_navigation" />
 
     <LinearLayout
