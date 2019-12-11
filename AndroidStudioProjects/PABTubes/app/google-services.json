@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "592235578118",
+    "firebase_url": "https://tugasbesar-18c46.firebaseio.com",
+    "project_id": "tugasbesar-18c46",
+    "storage_bucket": "tugasbesar-18c46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592235578118:android:da2af7e276f555ed47d487",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592235578118-cc2b9uc31dkav46jhlukbbtuuk7g06v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBrbNT0ar7o_pG-0nyRzDvRhrWUrWNLj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592235578118-cc2b9uc31dkav46jhlukbbtuuk7g06v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592235578118:android:12bee981b9cc65e647d487",
+        "android_client_info": {
+          "package_name": "com.example.pabtubes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592235578118-4ap6oevh8dv4mjm3njej8a5knek5ricc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pabtubes",
+            "certificate_hash": "399e0c0143f6d829f1d853106e2d4df85f1fc2fb"
+          }
+        },
+        {
+          "client_id": "592235578118-84qrel59r0g60o6i64pgkf8lciutf1cv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pabtubes",
+            "certificate_hash": "5524b146ee86532c3952cdd8013b18398f550f32"
+          }
+        },
+        {
+          "client_id": "592235578118-gvsnnlsf89stoi1devr0g19th38mbqo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pabtubes",
+            "certificate_hash": "39f7869a6fb5bbb66780a429db5edd8b940ef2b3"
+          }
+        },
+        {
+          "client_id": "592235578118-cc2b9uc31dkav46jhlukbbtuuk7g06v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBrbNT0ar7o_pG-0nyRzDvRhrWUrWNLj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592235578118-cc2b9uc31dkav46jhlukbbtuuk7g06v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

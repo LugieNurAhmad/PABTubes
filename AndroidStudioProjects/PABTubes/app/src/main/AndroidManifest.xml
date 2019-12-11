@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pabtubes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icoskizo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".reminder.AlarmReminder"
+            android:label="Reminder"></activity>
+        <activity android:name=".RekapData" />
+        <activity
+            android:name=".PenangananActivity"
+            android:label="Penanganan" />
+        <activity
+            android:name=".SkizoActivity"
+            android:label="Skizofrenia" />
+        <activity
+            android:name=".InfoActivity"
+            android:label="Info" />
+        <activity
+            android:name=".TesActivity"
+            android:label="Tes" />
+        <activity
+            android:name=".home"
+            android:theme="@style/AppTheme.Home" />
+        <activity android:name=".LoginActivity"
+            android:label="Login"/>
+        <activity android:name=".register"
+            android:label="Register"/>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".reminder.AlarmReceiver"/>
+    </application>
+
+</manifest>

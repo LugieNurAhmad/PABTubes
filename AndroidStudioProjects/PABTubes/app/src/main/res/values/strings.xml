@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Knoschi</string>
+    <string name="article1"><p>Skizofrenia adalau suatu kondisi mental yang berhubungan dengan ekspresi yang tak biasa atau persepsi terhadap kenyataan yang tidak biasa. Penyakit ini adalah suatu kondisi mental yang sangat rentan karena penderitanya tidak mampu membedakan antara kenyataan atau khayalan. Karena itu pula, mereka tidak dapat berpikir jernih dan mengendalikan emosi berkat sudut pandang yang sangat menyimpang dari kenyataan. Para penderita mulai melihat dan merasakan hal  hal tertentu yang pada akhirnya akan mengaburkan penilaian mereka terhadap situasi yang sesungguhnya terjadi, mengalami kebingungan dan ketakutan yang ada didalam pikiran mereka.</p></string>
+    <string name="info">Info</string>
+    <string name="info_text">Lihat cara menggunakan app ini</string>
+    <string name="skizo">Apa itu Skizofrenia ?</string>
+    <string name="skizo_text">Cek tipe atau tingkatan Skizofrenia</string>
+    <string name="penanganan">Penanganan</string>
+    <string name="penanganan_text">Atur jadwal terapi dan penanganan pertama</string>
+    <string name="tes">Tes</string>
+    <string name="tes_text">Lakukan tes berdasarkan gejala</string>
+    <string name="set">SET</string>
+    <string name="cancel">BATAL</string>
+
+
+
+    <string name="daftar">Daftar</string>
+    <string name="password">Password</string>
+    <string name="username">username</string>
+    <string name="tipe_user">User Type</string>
+    <string name="blm_dftr">Belum Punya Akun?</string>
+    <string name="email">Email</string>
+    <string-array name="usertype">
+        <item>user</item>
+        <item>admin</item>
+    </string-array>
+
+    <string name="article_tipe">Definisi skizofrenia menurut Pedoman Penggolongan dan Diagnosis Gangguan Jiwa III (PPDGJ, 2001) menjelaskan bahwa skizofrenia adalah suatu sindrom dengan variasi penyebab (banyak belum diketahui) dan perjalanan penyakit tak selalu bersifat kronis atau (deteriorating) yang luas, serta sejumlah akibat yang tergantung pada perimbangan pengaruh genetik, fisik, dan sosial budaya.
+        \n\n
+        Tipe Skizofrenia :\n
+        Skizofrenia bisa dibedakan menjadi beberapa tipe tergantung gejalanya :\n
+        <b>1. Tipe Paranoid (F20.0)</b>\n
+        <b>2. Tipe Heberefenik (F20.1)</b>\n
+        <b>3. Tipe Katatonik (F20.2)</b>\n
+        <b>4. Tipe Tak Terinci (Undifferentiated) (F20.3)</b>\n
+        <b>5. Tipe Residual (F20.5)</b>\n
+        <b>6. Tipe Simpleks (F20.6)</b>\n
+        <b>7. Tipe Depresi Pasca Skizofrenia</b></string>
+    <string name="login">Login</string>
+    <string name="dftr">Sudah Punya Akun?</string>
+</resources>

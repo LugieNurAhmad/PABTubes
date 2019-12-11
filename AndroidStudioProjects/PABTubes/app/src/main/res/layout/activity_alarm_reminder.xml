@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".reminder.AlarmReminder">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/ic_event_note"
+         android:layout_margin="5dp"
+         android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/reminderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tulis keterangan disini"
+            android:shadowColor="@color/colorPurple"/>
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/timePick"
+        android:headerBackground="@color/colorPurple"
+        android:numbersSelectorColor="@color/colorPurple"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="342dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/setBtn"
+            android:text= "@string/set"
+            android:layout_marginRight="20dp"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textColor="@color/whitebtn"
+            android:backgroundTint="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/cancelBtn"
+            android:text= "@string/cancel"
+            android:layout_marginRight="20dp"
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textColor="@color/whitebtn"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</LinearLayout>
