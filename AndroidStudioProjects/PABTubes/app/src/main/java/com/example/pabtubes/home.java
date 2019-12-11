@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+//cek
 public class home extends AppCompatActivity implements View.OnClickListener {
     private CardView tesCard, infoCard, skizoCard, penangananCard;
 
