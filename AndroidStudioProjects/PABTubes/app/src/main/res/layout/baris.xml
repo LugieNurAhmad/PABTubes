@@ -17,16 +17,33 @@
                 android:text="@+id/label"
                 android:textSize="15sp"/>
 
-            <CheckBox
+            <RadioGroup
                 android:id="@+id/checkB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginLeft="4dip"
-                android:layout_marginRight="10dip"
-                android:focusable="false"
-                android:focusableInTouchMode="false" >
-            </CheckBox>
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/yesChoice"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya"/>
+                <RadioButton
+                    android:id="@+id/noChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"/>
+            </RadioGroup>
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkB"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_marginLeft="4dip"-->
+<!--                android:layout_marginRight="10dip"-->
+<!--                android:focusable="false"-->
+<!--                android:focusableInTouchMode="false" >-->
+<!--            </CheckBox>-->
         </LinearLayout>
 
 </RelativeLayout>

@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,11 +35,15 @@ public class TesActivity extends AppCompatActivity implements AdapterView.OnItem
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         TextView label =(TextView) view.getTag(R.id.label);
-        CheckBox checkBox = (CheckBox) view.getTag(R.id.checkB);
-        Toast.makeText(view.getContext(), label.getText().toString()+""+isCheckedOrNot(checkBox), Toast.LENGTH_LONG).show();
+        RadioButton radioButtony = (RadioButton) view.getTag(R.id.yesChoice);
+        RadioButton radioButtont = (RadioButton) view.getTag(R.id.noChoice);
+//        CheckBox checkBox = (CheckBox) view.getTag(R.id.checkB);
+        Toast.makeText(view.getContext(), label.getText().toString()+""+isCheckedOrNot(radioButtony), Toast.LENGTH_LONG).show();
+        Toast.makeText(view.getContext(), label.getText().toString()+""+isCheckedOrNot(radioButtont), Toast.LENGTH_LONG).show();
+
     }
-    private String isCheckedOrNot(CheckBox checkbox) {
-        if(checkbox.isChecked())
+    private String isCheckedOrNot(RadioButton radioButtony) {
+        if(radioButtony.isChecked())
             return "is checked";
         else
             return "is not checked";
