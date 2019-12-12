@@ -5,16 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-<<<<<<< HEAD
 import android.widget.ListView;
 import android.widget.RadioButton;
-=======
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
->>>>>>> 5bdf156dcd82747bc488273929aeed6a42f7f915
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,28 +31,6 @@ public class TesActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tes);
 
-        final RadioGroup g01_gr = (RadioGroup)findViewById(R.id.G01_Gr);
-        final RadioGroup g02_gr = (RadioGroup)findViewById(R.id.G02_Gr);
-        final RadioGroup g03_gr = (RadioGroup)findViewById(R.id.G03_Gr);
-        final RadioGroup g04_gr = (RadioGroup)findViewById(R.id.G04_Gr);
-
-<<<<<<< HEAD
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        TextView label =(TextView) view.getTag(R.id.label);
-        RadioButton radioButtony = (RadioButton) view.getTag(R.id.yesChoice);
-        RadioButton radioButtont = (RadioButton) view.getTag(R.id.noChoice);
-//        CheckBox checkBox = (CheckBox) view.getTag(R.id.checkB);
-        Toast.makeText(view.getContext(), label.getText().toString()+""+isCheckedOrNot(radioButtony), Toast.LENGTH_LONG).show();
-        Toast.makeText(view.getContext(), label.getText().toString()+""+isCheckedOrNot(radioButtont), Toast.LENGTH_LONG).show();
-
-    }
-    private String isCheckedOrNot(RadioButton radioButtony) {
-        if(radioButtony.isChecked())
-            return "is checked";
-        else
-            return "is not checked";
-=======
         final RadioButton g01y = (RadioButton)findViewById(R.id.G01Y);
         final RadioButton g02y = (RadioButton)findViewById(R.id.G02Y);
         final RadioButton g03y = (RadioButton)findViewById(R.id.G03Y);
@@ -149,7 +124,6 @@ public class TesActivity extends AppCompatActivity  {
 
             }
         });
->>>>>>> 5bdf156dcd82747bc488273929aeed6a42f7f915
     }
 
     public void lanjutSecond(View view) {

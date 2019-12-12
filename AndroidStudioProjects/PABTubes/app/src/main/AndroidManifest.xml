@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".tesquestion.TypeQuestion"></activity>
         <activity
             android:name=".tesquestion.SecondQuestion"
-            android:label="Tahap ke 2"></activity>
+            android:label="Tahap ke 2" />
         <activity
             android:name=".reminder.AlarmReminder"
             android:label="Reminder" />
