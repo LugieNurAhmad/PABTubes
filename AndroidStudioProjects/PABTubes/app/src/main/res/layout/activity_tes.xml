@@ -156,7 +156,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/lanjutBtn"
+                android:id="@+id/cekBtnU"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -185,12 +185,14 @@
                         android:gravity="center"/>
                 </androidx.cardview.widget.CardView>
                 <Button
-                    android:id="@+id/scd_question"
+                    android:id="@+id/ljt_diagUmum"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lanjut Diagnosa"
-                    android:onClick="lanjutSecond"
                     android:textColor="@android:color/white"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:backgroundTint="@android:color/holo_green_light"></Button>
             </LinearLayout>
 

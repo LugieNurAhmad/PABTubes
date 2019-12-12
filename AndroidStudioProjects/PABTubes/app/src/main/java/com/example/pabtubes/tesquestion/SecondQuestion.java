@@ -2,6 +2,7 @@ package com.example.pabtubes.tesquestion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -36,6 +37,15 @@ public class SecondQuestion extends AppCompatActivity {
         final TextView pktM = (TextView)findViewById(R.id.pktId);
         pktM.setText("");
 
+        final Button cektipe = (Button)findViewById(R.id.cekTipe);
+        cektipe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cektipeIntent = new Intent(SecondQuestion.this, TypeQuestion.class);
+                startActivity(cektipeIntent);
+            }
+        });
+
         Button BtCek = (Button)findViewById(R.id.cekBtn);
         BtCek.setOnClickListener(new View.OnClickListener(){
 
@@ -47,71 +57,101 @@ public class SecondQuestion extends AppCompatActivity {
                 //Rule15
                 if (g05y.isChecked()&&g06y.isChecked()&&g07y.isChecked()&&g08y.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule16
                 if (g05y.isChecked()&&g06y.isChecked()&&g07y.isChecked()&&g08t.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule17
                 if (g05y.isChecked()&&g06y.isChecked()&&g07t.isChecked()&&g08y.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule18
                 if (g05y.isChecked()&&g06t.isChecked()&&g07y.isChecked()&&g08y.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule19
                 if (g05t.isChecked()&&g06y.isChecked()&&g07y.isChecked()&&g08y.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule20
                 if (g05y.isChecked()&&g06y.isChecked()&&g07t.isChecked()&&g08t.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule21
                 if (g05y.isChecked()&&g06t.isChecked()&&g07y.isChecked()&&g08t.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule22
                 if (g05y.isChecked()&&g06t.isChecked()&&g07t.isChecked()&&g08y.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule23
                 if (g05t.isChecked()&&g06y.isChecked()&&g07y.isChecked()&&g08t.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule24
                 if (g05t.isChecked()&&g06y.isChecked()&&g07t.isChecked()&&g08y.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //Rule25
                 if (g05t.isChecked()&&g06t.isChecked()&&g07y.isChecked()&&g08y.isChecked()){
                     penyakit += " "+skizo;
+                    cektipe.setVisibility(View.VISIBLE);
+
                 }
                 //no1
                 if (g05t.isChecked()&&g06t.isChecked()&&g07t.isChecked()&&g08t.isChecked()){
                     penyakit += " "+aman;
+                    cektipe.setVisibility(View.INVISIBLE);
                 }
                 //no2
                 if (g05y.isChecked()&&g06t.isChecked()&&g07t.isChecked()&&g08t.isChecked()){
                     penyakit += " "+aman;
+                    cektipe.setVisibility(View.INVISIBLE);
                 }
                 //no3
                 if (g05t.isChecked()&&g06y.isChecked()&&g07t.isChecked()&&g08t.isChecked()){
                     penyakit += " "+aman;
+                    cektipe.setVisibility(View.INVISIBLE);
                 }
                 //no4
                 if (g05t.isChecked()&&g06t.isChecked()&&g07y.isChecked()&&g08t.isChecked()){
                     penyakit += " "+aman;
+                    cektipe.setVisibility(View.INVISIBLE);
                 }
                 //no1
                 if (g05t.isChecked()&&g06t.isChecked()&&g07t.isChecked()&&g08y.isChecked()){
                     penyakit += " "+aman;
+                    cektipe.setVisibility(View.INVISIBLE);
                 }
                 pktM.setText(""+penyakit);
 
+//                if (penyakit.equals(skizo)){
+//                }
+
             }
         });
-
     }
+
 }

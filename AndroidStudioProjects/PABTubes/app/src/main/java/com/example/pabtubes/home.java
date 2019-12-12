@@ -49,7 +49,7 @@ public class home extends AppCompatActivity implements View.OnClickListener {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.profil:
-                        startActivity(new Intent(getApplicationContext(),home.class));
+                        startActivity(new Intent(getApplicationContext(),profil.class));
                         overridePendingTransition(0,0);
                         return true;
                 }
