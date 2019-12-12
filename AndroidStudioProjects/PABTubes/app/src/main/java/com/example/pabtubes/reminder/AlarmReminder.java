@@ -1,17 +1,22 @@
 package com.example.pabtubes.reminder;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.pabtubes.R;
+import com.example.pabtubes.SkizoActivity;
+import com.example.pabtubes.home;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Calendar;
 
@@ -26,6 +31,32 @@ public class AlarmReminder extends AppCompatActivity implements View.OnClickList
 
         findViewById(R.id.setBtn).setOnClickListener(this);
         findViewById(R.id.cancelBtn).setOnClickListener(this);
+
+        //code untuk Bottom Navigation Bar
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
+        bottomNavigationView.setSelectedItemId(R.id.reminder);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.about:
+                        startActivity(new Intent(getApplicationContext(), SkizoActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(), home.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.reminder:
+                        return true;
+                    case R.id.profil:
+                        startActivity(new Intent(getApplicationContext(),home.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
     }
 
     @Override

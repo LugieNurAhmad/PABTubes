@@ -5,29 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
-    tools:context=".TesActivity">
+    tools:context=".tesquestion.SecondQuestion">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/tescard2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/tescard"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:backgroundTint="@color/colorPrimary"
-        app:cardCornerRadius="10dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:text="Tes Skizofrenia Umum"/>
-    </androidx.cardview.widget.CardView>
+        android:text="Tes Skizofrenia Umum"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="false"></androidx.cardview.widget.CardView>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tescard">
+        android:layout_below="@id/tescard2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,56 +33,25 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/G01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1. Apakah pasien sering mengalami isi pikiran yang berulang? atau merasa isi pikirannya tersiar ke luar sehingga orang lain atau umum mengetahuinya? atau merasa isi pikiran yang asing dari luar masuk ke dalam pikirannya ?" />
-
                 <RadioGroup
-                    android:id="@+id/G01_Gr"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/G01Y"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ya" />
-
-                    <RadioButton
-                        android:id="@+id/G01T"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tidak" />
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <RadioGroup
-                    android:id="@+id/G02_Gr"
+                    android:id="@+id/G05_Gr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/G02"
+                        android:id="@+id/G05"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2. Apakah pasien merasa dirinya dikendalikan, dipengaruhi atau merasa tidak berdaya terhdapat suatu kekuatan tertentu dari luar?" />
+                        android:text="5. Apakah pasien memiliki halusinasi yang menetap (berminggu atau berbulan-bulan)?" />
 
                     <RadioButton
-                        android:id="@+id/G02Y"
+                        android:id="@+id/G05Y"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ya" />
 
                     <RadioButton
-                        android:id="@+id/G02T"
+                        android:id="@+id/G05T"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tidak" />
@@ -101,24 +64,24 @@
                 android:orientation="vertical">
 
                 <RadioGroup
-                    android:id="@+id/G03_Gr"
+                    android:id="@+id/G06_Gr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/G03"
+                        android:id="@+id/G06"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="3. Apakah pasien sering berhalusinasi (mendengar suara-suara yang mendiskusikan tentang si pasien sendiri) ?" />
+                        android:text="6. Apakah pembicaran dengan pasien tidak relevan (Inkoheren)?" />
 
                     <RadioButton
-                        android:id="@+id/G03Y"
+                        android:id="@+id/G06Y"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ya" />
 
                     <RadioButton
-                        android:id="@+id/G03T"
+                        android:id="@+id/G06T"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tidak" />
@@ -131,24 +94,54 @@
                 android:orientation="vertical">
 
                 <RadioGroup
-                    android:id="@+id/G04_Gr"
+                    android:id="@+id/G07_Gr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/G04"
+                        android:id="@+id/G07"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="4. Apakah perilaku pasien dianggap sesuatu yang tidak wajar atau mustahil menurut budaya setempat?" />
+                        android:text="7. Apakah pasien sering merasa gelisah ?" />
 
                     <RadioButton
-                        android:id="@+id/G04Y"
+                        android:id="@+id/G07Y"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ya" />
 
                     <RadioButton
-                        android:id="@+id/G04T"
+                        android:id="@+id/G07T"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/G08_Gr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/G08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8. Apakah pasien bersikap apatis ?" />
+
+                    <RadioButton
+                        android:id="@+id/G08Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ya" />
+
+                    <RadioButton
+                        android:id="@+id/G08T"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tidak" />
@@ -156,43 +149,33 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/lanjutBtn"
+                android:id="@+id/cekBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="right"
+                android:gravity="center"
                 android:textColor="@android:color/white"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="Cek"/>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/diagnosis2"
+                android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
-                <androidx.cardview.widget.CardView
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal">
+                android:layout_gravity="center"
+                app:cardCornerRadius="3dp">
 
-                    <TextView
-                        android:id="@+id/penyakitId"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Penyakiit"
-                        android:layout_margin="10dp"
-                        android:gravity="center"/>
-                </androidx.cardview.widget.CardView>
-                <Button
-                    android:id="@+id/scd_question"
+                <TextView
+                    android:id="@+id/pktId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lanjut Diagnosa"
-                    android:onClick="lanjutSecond"
-                    android:textColor="@android:color/white"
-                    android:backgroundTint="@android:color/holo_green_light"></Button>
-            </LinearLayout>
+                    android:text="Penyakiit"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
     </ScrollView>

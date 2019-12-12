@@ -2,11 +2,17 @@ package com.example.pabtubes;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.example.pabtubes.reminder.AlarmReminder;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+//cek
 public class home extends AppCompatActivity implements View.OnClickListener {
     private CardView tesCard, infoCard, skizoCard, penangananCard;
 
@@ -24,6 +30,32 @@ public class home extends AppCompatActivity implements View.OnClickListener {
 //        infoCard.setOnClickListener(this);
         skizoCard.setOnClickListener(this);
         penangananCard.setOnClickListener(this);
+
+        //code untuk Bottom Navigation Bar
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.about:
+                        startActivity(new Intent(getApplicationContext(),SkizoActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.home:
+                        return true;
+                    case R.id.reminder:
+                        startActivity(new Intent(getApplicationContext(), AlarmReminder.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.profil:
+                        startActivity(new Intent(getApplicationContext(),home.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
 
     }
 

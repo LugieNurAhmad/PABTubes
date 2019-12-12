@@ -12,7 +12,11 @@
         android:id="@+id/bottom_nav"
         android:background="@color/colorPrimary"
         app:itemBackground="@color/colorPrimary"
+<<<<<<< HEAD
         app:itemTextColor="@android:color/white"
+=======
+        app:itemTextColor="@drawable/selector"
+>>>>>>> 5bdf156dcd82747bc488273929aeed6a42f7f915
         app:itemIconTint="@drawable/selector"
         app:menu="@menu/menu_navigation"
         android:layout_alignParentBottom="true"/>
