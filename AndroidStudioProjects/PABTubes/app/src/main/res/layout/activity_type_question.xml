@@ -80,7 +80,8 @@
                         android:id="@+id/G010"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="10. Apakah pasien sering berhalusinasi tentang pembauan atau pengecapan?"/>
+                        android:text="10. Apakah pasien sering berhalusinasi tentang pembauan atau pengecapan?" />
+
                     <RadioButton
                         android:id="@+id/G010Y"
                         android:layout_width="wrap_content"
@@ -109,7 +110,8 @@
                         android:id="@+id/G011"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="11. Apakah pasien pernah merasa dikejar-kejar oleh sesuatu?"/>
+                        android:text="11. Apakah pasien pernah merasa dikejar-kejar oleh sesuatu?" />
+
                     <RadioButton
                         android:id="@+id/G011Y"
                         android:layout_width="wrap_content"
@@ -138,7 +140,8 @@
                         android:id="@+id/G012"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="12. Apakah pasien mengalami gangguan perasaan?"/>
+                        android:text="12. Apakah pasien mengalami gangguan perasaan?" />
+
                     <RadioButton
                         android:id="@+id/G012Y"
                         android:layout_width="wrap_content"
@@ -167,7 +170,8 @@
                         android:id="@+id/G013"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="13. Pasien menunjukkan kepribadian pemalu dan senang menyendiri (solitary)"/>
+                        android:text="13. Pasien menunjukkan kepribadian pemalu dan senang menyendiri (solitary)" />
+
                     <RadioButton
                         android:id="@+id/G013Y"
                         android:layout_width="wrap_content"
@@ -196,7 +200,8 @@
                         android:id="@+id/G014"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14. Apakah pasien sering menunjukkan perilaku tanpa tujuan, tidak wajar, dan tanpa maksud?"/>
+                        android:text="14. Apakah pasien sering menunjukkan perilaku tanpa tujuan, tidak wajar, dan tanpa maksud?" />
+
                     <RadioButton
                         android:id="@+id/G014Y"
                         android:layout_width="wrap_content"
@@ -225,7 +230,8 @@
                         android:id="@+id/G015"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="15. Apakah pasien menunjukkan perilaku mutisme (tidak berbicara) serta tidak reaktif terhadap sekitar?"/>
+                        android:text="15. Apakah pasien menunjukkan perilaku mutisme (tidak berbicara) serta tidak reaktif terhadap sekitar?" />
+
                     <RadioButton
                         android:id="@+id/G015Y"
                         android:layout_width="wrap_content"
@@ -254,7 +260,8 @@
                         android:id="@+id/G016"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="16. Pasien tampak gelisah"/>
+                        android:text="16. Pasien tampak gelisah" />
+
                     <RadioButton
                         android:id="@+id/G016Y"
                         android:layout_width="wrap_content"
@@ -283,7 +290,8 @@
                         android:id="@+id/G017"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="17. Pasien menampilkan posisi tubuh tertentu yang tidak wajar"/>
+                        android:text="17. Pasien menampilkan posisi tubuh tertentu yang tidak wajar" />
+
                     <RadioButton
                         android:id="@+id/G017Y"
                         android:layout_width="wrap_content"
@@ -312,7 +320,8 @@
                         android:id="@+id/G018"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="18. Pasien menunjukkan perilaku negativisme (perlawanan yang tidak bermotif terhadap semua perintah)"/>
+                        android:text="18. Pasien menunjukkan perilaku negativisme (perlawanan yang tidak bermotif terhadap semua perintah)" />
+
                     <RadioButton
                         android:id="@+id/G018Y"
                         android:layout_width="wrap_content"
@@ -341,7 +350,8 @@
                         android:id="@+id/G019"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="19. Pasien mengalami rigiditas (kekakuan yang terjadi pada seluruh tubuh atau sebagian anggota tubuh)"/>
+                        android:text="19. Pasien mengalami rigiditas (kekakuan yang terjadi pada seluruh tubuh atau sebagian anggota tubuh)" />
+
                     <RadioButton
                         android:id="@+id/G019Y"
                         android:layout_width="wrap_content"
@@ -370,7 +380,8 @@
                         android:id="@+id/G020"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="20. Pasien mengalami waxy flexibility (kondisi dimana seseorang dapat mempertahankan suatu posisi tubuh yang tidak lazim dalam waktu yang cukup lama setelah orang lain merubah posisi tubuhnya)"/>
+                        android:text="20. Pasien mengalami waxy flexibility (kondisi dimana seseorang dapat mempertahankan suatu posisi tubuh yang tidak lazim dalam waktu yang cukup lama setelah orang lain merubah posisi tubuhnya)" />
+
                     <RadioButton
                         android:id="@+id/G020Y"
                         android:layout_width="wrap_content"
@@ -399,7 +410,8 @@
                         android:id="@+id/G021"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="21. Pasien mengalami command automatism (kepatuhan secara otomatis terhadap perintah), dan pengulangan kata-kata serta kalimat)"/>
+                        android:text="21. Pasien mengalami command automatism (kepatuhan secara otomatis terhadap perintah), dan pengulangan kata-kata serta kalimat)" />
+
                     <RadioButton
                         android:id="@+id/G021Y"
                         android:layout_width="wrap_content"
@@ -428,7 +440,8 @@
                         android:id="@+id/G022"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="22. Pasien Sudah memenuhi kriteria diagnosis untuk Skizofrenia tetapi tidak memenuhi kriteria tipe paranoid, hebefrenik, katatonik, residual, atau pasca Skizofrenia"/>
+                        android:text="22. Pasien Sudah memenuhi kriteria diagnosis untuk Skizofrenia tetapi tidak memenuhi kriteria tipe paranoid, hebefrenik, katatonik, residual, atau pasca Skizofrenia" />
+
                     <RadioButton
                         android:id="@+id/G022Y"
                         android:layout_width="wrap_content"
@@ -457,7 +470,8 @@
                         android:id="@+id/G023"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="23. Pasien memiliki riwayat psikotik yang jelas dimasa lalu yang memenuhi kriteria Skizofrenia"/>
+                        android:text="23. Pasien memiliki riwayat psikotik yang jelas dimasa lalu yang memenuhi kriteria Skizofrenia" />
+
                     <RadioButton
                         android:id="@+id/G023Y"
                         android:layout_width="wrap_content"
@@ -486,7 +500,8 @@
                         android:id="@+id/G024"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="24. Riwayat psikotik diatas paling sedikit melampaui kurun waktu satu tahun"/>
+                        android:text="24. Riwayat psikotik diatas paling sedikit melampaui kurun waktu satu tahun" />
+
                     <RadioButton
                         android:id="@+id/G024Y"
                         android:layout_width="wrap_content"
@@ -515,7 +530,8 @@
                         android:id="@+id/G025"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="25. Pasien sedang tidak menderita dimensia, penyakit otak organik, atau depresi kronis"/>
+                        android:text="25. Pasien sedang tidak menderita dimensia, penyakit otak organik, atau depresi kronis" />
+
                     <RadioButton
                         android:id="@+id/G025Y"
                         android:layout_width="wrap_content"
@@ -544,7 +560,8 @@
                         android:id="@+id/G026"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="26. Gejala skizofrenia yang dialami pasien bersifat berlahan-lahan tetapi progresif"/>
+                        android:text="26. Gejala skizofrenia yang dialami pasien bersifat berlahan-lahan tetapi progresif" />
+
                     <RadioButton
                         android:id="@+id/G026Y"
                         android:layout_width="wrap_content"
@@ -573,7 +590,8 @@
                         android:id="@+id/G027"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="27. Gejala yang ada pada pasien tidak didahului oleh waham dan halusinasi "/>
+                        android:text="27. Gejala yang ada pada pasien tidak didahului oleh waham dan halusinasi " />
+
                     <RadioButton
                         android:id="@+id/G027Y"
                         android:layout_width="wrap_content"
@@ -602,7 +620,8 @@
                         android:id="@+id/G028"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="28. Gejala psikotik yang dialami pasien kurang nyata dibanding dengan Skizofrenia tipe lain"/>
+                        android:text="28. Gejala psikotik yang dialami pasien kurang nyata dibanding dengan Skizofrenia tipe lain" />
+
                     <RadioButton
                         android:id="@+id/G028Y"
                         android:layout_width="wrap_content"
@@ -631,7 +650,8 @@
                         android:id="@+id/G029"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="29. Gejala negatif yang dialami pasien timbul tanpa didahului oleh gejala-gejala psikotik yang nyata"/>
+                        android:text="29. Gejala negatif yang dialami pasien timbul tanpa didahului oleh gejala-gejala psikotik yang nyata" />
+
                     <RadioButton
                         android:id="@+id/G029Y"
                         android:layout_width="wrap_content"
@@ -660,7 +680,8 @@
                         android:id="@+id/G030"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30. Pasien telah mengalami Skizofrenia selama 12 bulan"/>
+                        android:text="30. Pasien telah mengalami Skizofrenia selama 12 bulan" />
+
                     <RadioButton
                         android:id="@+id/G030Y"
                         android:layout_width="wrap_content"
@@ -689,7 +710,8 @@
                         android:id="@+id/G031"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="31. Bebrapa gejala skizofrenia yang dialami pasien masih ada"/>
+                        android:text="31. Bebrapa gejala skizofrenia yang dialami pasien masih ada" />
+
                     <RadioButton
                         android:id="@+id/G031Y"
                         android:layout_width="wrap_content"
@@ -718,7 +740,8 @@
                         android:id="@+id/G032"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="32. Pasien mengalami gejala-gejala depresif yang menonjol dan mengganggu, memenuhi episode depresif dan berlangsung minimal 2 minggu."/>
+                        android:text="32. Pasien mengalami gejala-gejala depresif yang menonjol dan mengganggu, memenuhi episode depresif dan berlangsung minimal 2 minggu." />
+
                     <RadioButton
                         android:id="@+id/G032Y"
                         android:layout_width="wrap_content"
@@ -769,18 +792,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/holo_green_light"
-                    android:text="Lanjut Diagnosa"
-<<<<<<< HEAD
-                    android:textColor="@android:color/white"></Button>
-<!--                    android:onClick="lanjutSecond"-->
+                    android:text="Lanjut Diagnosa/>
 
-=======
-                    android:textColor="@android:color/white"
-                    android:backgroundTint="@android:color/holo_green_light"></Button>
->>>>>>> 7a2e6e99c4e86346de3d17238a22b77d71ecc335
             </LinearLayout>
-
         </LinearLayout>
+
+
+
+
+
+
+
+
+
+
     </ScrollView>
 
-</RelativeLayout>
+    </RelativeLayout>
