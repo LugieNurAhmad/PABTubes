@@ -11,9 +11,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".profil"></activity>
 
+
         <activity android:name=".tes_paranoid" />
         <activity android:name=".tesquestion.TypeQuestion" />
-<!--        <activity android:name=".tesquestion.TypeQuestion"></activity>-->
+
+
+
         <activity
             android:name=".tesquestion.SecondQuestion"
             android:label="Tahap ke 2" />

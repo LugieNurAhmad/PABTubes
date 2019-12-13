@@ -123,11 +123,11 @@ public class TypeQuestion extends AppCompatActivity {
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 29 - 34
-                if (g015y.isChecked()||g016y.isChecked()||g017y.isChecked()||g018y.isChecked()
-                        ||g019y.isChecked()||g020y.isChecked()||g021y.isChecked()){
-
-                    penyakit += " "+tipeKatatonik;
-                }
+//                if (g015y.isChecked()||g016y.isChecked()||g017y.isChecked()||g018y.isChecked()
+//                        ||g019y.isChecked()||g020y.isChecked()||g021y.isChecked()){
+//
+//                    penyakit += " "+tipeKatatonik;
+//                }
                 //rule 35
                 if (g015y.isChecked()&&g016y.isChecked()){
                     penyakit += " "+tipeKatatonik;
