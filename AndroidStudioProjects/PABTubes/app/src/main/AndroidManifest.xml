@@ -10,7 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".profil"></activity>
+<<<<<<< HEAD
+        <activity android:name=".tes_paranoid" />
+        <activity android:name=".tesquestion.TypeQuestion" />
+=======
         <activity android:name=".tesquestion.TypeQuestion"></activity>
+>>>>>>> 7a2e6e99c4e86346de3d17238a22b77d71ecc335
         <activity
             android:name=".tesquestion.SecondQuestion"
             android:label="Tahap ke 2" />

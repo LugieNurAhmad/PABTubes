@@ -8,20 +8,21 @@
     tools:context=".tesquestion.TypeQuestion">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/tescard"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/tescard"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:backgroundTint="@color/colorPrimary"
         app:cardCornerRadius="10dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:textStyle="bold"
+            android:text="Tes Tipe Skizofrenia"
             android:textColor="@android:color/white"
-            android:text="Tes Tipe Skizofrenia"/>
+            android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
     <ScrollView
@@ -736,40 +737,53 @@
                 android:id="@+id/cekBtnType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_gravity="right"
-                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="@color/colorPrimary"
-                android:text="Cek"/>
+                android:text="Cek"
+                android:textColor="@android:color/white" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
                 <androidx.cardview.widget.CardView
-                    android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal">
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp">
 
                     <TextView
                         android:id="@+id/penyakitId"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Penyakiit"
                         android:layout_margin="10dp"
-                        android:gravity="center"/>
+                        android:gravity="center"
+                        android:text="Penyakiit" />
                 </androidx.cardview.widget.CardView>
+
                 <Button
                     android:id="@+id/hasilBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:text="Lihat Hasil"
+=======
+                    android:backgroundTint="@android:color/holo_green_light"
+                    android:text="Lanjut Diagnosa"
+<<<<<<< HEAD
+                    android:textColor="@android:color/white"></Button>
+<!--                    android:onClick="lanjutSecond"-->
+
+=======
+>>>>>>> d8eca368355ad04ccad68612123408692352dfd9
                     android:textColor="@android:color/white"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:backgroundTint="@android:color/holo_green_light"></Button>
+>>>>>>> 7a2e6e99c4e86346de3d17238a22b77d71ecc335
             </LinearLayout>
 
         </LinearLayout>
