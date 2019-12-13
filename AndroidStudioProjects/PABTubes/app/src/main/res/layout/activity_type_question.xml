@@ -762,11 +762,13 @@
                         android:gravity="center"/>
                 </androidx.cardview.widget.CardView>
                 <Button
-                    android:id="@+id/scd_question"
+                    android:id="@+id/hasilBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lanjut Diagnosa"
+                    android:text="Lihat Hasil"
                     android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:backgroundTint="@android:color/holo_green_light"></Button>
             </LinearLayout>
 
