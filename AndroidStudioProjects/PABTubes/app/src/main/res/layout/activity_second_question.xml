@@ -14,9 +14,18 @@
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="Tes Skizofrenia Umum"
         app:cardCornerRadius="10dp"
-        app:cardPreventCornerOverlap="false"></androidx.cardview.widget.CardView>
+        app:cardPreventCornerOverlap="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Tes Skizofrenia Umum"
+            android:textColor="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -159,6 +168,12 @@
                 android:backgroundTint="@color/colorPrimary"
                 android:text="Cek"/>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
             <androidx.cardview.widget.CardView
                 android:id="@+id/diagnosis2"
                 android:layout_margin="10dp"
@@ -177,6 +192,15 @@
                     android:gravity="center"/>
             </androidx.cardview.widget.CardView>
 
+            <Button
+                android:id="@+id/cekTipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cek tipe"
+                android:visibility="invisible"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_green_light"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

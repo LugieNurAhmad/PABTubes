@@ -44,8 +44,17 @@ public class TesActivity extends AppCompatActivity  {
         final TextView penyakitM = (TextView)findViewById(R.id.penyakitId);
         penyakitM.setText("");
 
+        final Button lanjutDiag = (Button)findViewById(R.id.ljt_diagUmum);
+        lanjutDiag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cekIntent = new Intent(TesActivity.this, SecondQuestion.class);
+                startActivity(cekIntent);
+            }
+        });
 
-        Button BtLanjut = (Button)findViewById(R.id.lanjutBtn);
+
+        Button BtLanjut = (Button)findViewById(R.id.cekBtnU);
         BtLanjut.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -119,14 +128,10 @@ public class TesActivity extends AppCompatActivity  {
                 }
                 penyakitM.setText(""+penyakit);
 
-                if (penyakit == skizo && penyakit != aman) {
-                }
+                lanjutDiag.setVisibility(View.VISIBLE);
 
             }
         });
     }
 
-    public void lanjutSecond(View view) {
-            startActivity(new Intent(this, SecondQuestion.class));
-    }
 }

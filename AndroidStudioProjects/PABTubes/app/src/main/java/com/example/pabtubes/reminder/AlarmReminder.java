@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.pabtubes.R;
 import com.example.pabtubes.SkizoActivity;
 import com.example.pabtubes.home;
+import com.example.pabtubes.profil;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Calendar;
@@ -50,7 +51,7 @@ public class AlarmReminder extends AppCompatActivity implements View.OnClickList
                     case R.id.reminder:
                         return true;
                     case R.id.profil:
-                        startActivity(new Intent(getApplicationContext(),home.class));
+                        startActivity(new Intent(getApplicationContext(), profil.class));
                         overridePendingTransition(0,0);
                         return true;
                 }
