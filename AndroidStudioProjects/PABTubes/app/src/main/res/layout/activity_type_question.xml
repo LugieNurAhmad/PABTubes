@@ -768,22 +768,11 @@
                     android:id="@+id/hasilBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                     android:text="Lihat Hasil"
-=======
                     android:backgroundTint="@android:color/holo_green_light"
-                    android:text="Lanjut Diagnosa"
-<<<<<<< HEAD
-                    android:textColor="@android:color/white"></Button>
-<!--                    android:onClick="lanjutSecond"-->
-
-=======
->>>>>>> d8eca368355ad04ccad68612123408692352dfd9
                     android:textColor="@android:color/white"
                     android:layout_gravity="center"
-                    android:gravity="center"
-                    android:backgroundTint="@android:color/holo_green_light"></Button>
->>>>>>> 7a2e6e99c4e86346de3d17238a22b77d71ecc335
+                    android:gravity="center"/>
             </LinearLayout>
 
         </LinearLayout>
