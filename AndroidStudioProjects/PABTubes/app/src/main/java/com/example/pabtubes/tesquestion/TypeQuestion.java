@@ -86,14 +86,23 @@ public class TypeQuestion extends AppCompatActivity {
                 String tipeResidual = "Anda terkena Skizofrenia Residual";
                 String tipeSimpleks = "Anda terkena Skizofrenia Simpleks";
                 String tipePasca = "Anda terkena Depresi Pasca Skizofrenial";
+
+//                tipeParanoid
+
                 //rule 26
                 if (g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()){
                     penyakit += " "+tipeParanoid;
                 }
+
+//                tipeHeberefenik
+
                 //rule 27
                 if (g013y.isChecked()&&g014y.isChecked()){
                     penyakit += " "+tipeHeberefenik;
                 }
+
+//                tipeKatatonik
+
                 //rule 28
                 if (g015y.isChecked()){
                     penyakit += " "+tipeKatatonik;
@@ -577,45 +586,53 @@ public class TypeQuestion extends AppCompatActivity {
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 147
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 148
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 149
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 150
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g018t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 151
-                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g017t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 152
-                if (g015y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g016t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 153
-                if (g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 154
                 if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
+
+//                tipeter
+
                 //rule 155
                 if (g022y.isChecked()){
                     penyakit += " "+tipeTer;
                 }
+
+//                tipeResidual
+
                 //rule 156
                 if (g023y.isChecked()&&g024y.isChecked()&&g025y.isChecked()){
                     penyakit += " "+tipeResidual;
                 }
+
+
                 //rule 157
                 if (g026y.isChecked()&&g027y.isChecked()&&g028y.isChecked()&&g029y.isChecked()){
                     penyakit += " "+tipeSimpleks;
