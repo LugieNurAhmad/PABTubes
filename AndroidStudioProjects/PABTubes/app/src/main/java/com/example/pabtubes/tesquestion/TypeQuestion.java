@@ -1,16 +1,55 @@
 package com.example.pabtubes.tesquestion;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.example.pabtubes.LoginActivity;
 import com.example.pabtubes.R;
+import com.example.pabtubes.RekapData;
+import com.example.pabtubes.home;
+import com.example.pabtubes.register;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class TypeQuestion extends AppCompatActivity {
+
+    public static final String TAG = "TAG";
+
+    private DatabaseReference databse;
+//    FirebaseAuth firebaseAuth;
+
+    private FirebaseAuth fAuth;
+    private FirebaseFirestore FSdatabase;
+
+
+    private String userID;
+    public String safe="Aman",paranoid="Paranoid", hebefenik="Heberefenik", katatonik="Katatonik", ter="Tak_Terperinci",residual="Residual",simplex="Simplex",pasca="Pasca", penyakitDB, hasilDB;
+//    String aman = "Belum ada indikasi terkena Skizofrenia";
+//    String tipeParanoid = "Anda terkena Skizofrenia Paranoid";
+//    String tipeHeberefenik = "Anda terkena Skizofrenia Hebrefenik";
+//    String tipeKatatonik = "Anda terkena Skizofrenia Katatonik";
+//    String tipeTer = "Anda terkena Skizofrenia Tak terinnci";
+//    String tipeResidual = "Anda terkena Skizofrenia Residual";
+//    String tipeSimpleks = "Anda terkena Skizofrenia Simpleks";
+//    String tipePasca = "Anda terkena Depresi Pasca Skizofrenial";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +116,7 @@ public class TypeQuestion extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+
                 String penyakit = "Diagnosis : \n";
                 String aman = "Belum ada indikasi terkena Skizofrenia";
                 String tipeParanoid = "Anda terkena Skizofrenia Paranoid";
@@ -92,6 +132,8 @@ public class TypeQuestion extends AppCompatActivity {
                 //rule 26
                 if (g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()){
                     penyakit += " "+tipeParanoid;
+                    penyakitDB = "paranoid";
+
                 }
 
 //                tipeHeberefenik
@@ -99,6 +141,7 @@ public class TypeQuestion extends AppCompatActivity {
                 //rule 27
                 if (g013y.isChecked()&&g014y.isChecked()){
                     penyakit += " "+tipeHeberefenik;
+                    penyakitDB = hebefenik;
                 }
 
 //                tipeKatatonik
@@ -679,10 +722,54 @@ public class TypeQuestion extends AppCompatActivity {
                 //no
 //                if (g01t.isChecked()&&g02t.isChecked()&&g03t.isChecked()&&g04t.isChecked()){
 //                    penyakit += " "+aman;
-//                }
+//               }
                 penyakitM.setText(""+penyakit);
+
+//                String penyakitdb = penyakitM.setText("" + penyakit);
+
+
+
+//                documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+//                    @Override
+//                    public void onSuccess(Void aVoid) {
+//                        Log.d(TAG, "OnSuccess: user profile is created for" + userID);
+//                    }
+//                }).addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                        Log.d(TAG, "onFailure: "+e.toString());
+//                    }
+//                });
+
+//                startActivity(new Intent(getApplicationContext(),home.class));
+
+
 
             }
         });
+    }
+
+    public void submitDataRekap(View view){
+        hasilDB= penyakitDB.getBytes().toString();
+
+        userID = fAuth.getCurrentUser().getUid();
+        DocumentReference documentUser = FSdatabase.collection("Rekap_Data").document(userID);
+        final Map<String, Object> user = new HashMap<>();
+        user.put("Penyakit", hasilDB);
+
+        documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Log.d(TAG, "OnSuccess: user profile is created for" + userID);
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d(TAG, "onFailure: "+e.toString());
+            }
+        });
+
+        Intent intent = new Intent(this, RekapData.class);
+        startActivity(intent);
     }
 }
