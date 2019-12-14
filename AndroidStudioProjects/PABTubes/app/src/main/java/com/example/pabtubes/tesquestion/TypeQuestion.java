@@ -285,7 +285,7 @@ public class TypeQuestion extends AppCompatActivity {
 //                &&g016t.isChecked()&&g018t.isChecked()&&g019t.isChecked()&&g020t.isChecked()&&g021t.isChecked()
 
                 //rule 65
-                if (g015y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g016t.isChecked()&&g018t.isChecked(&&g020t.isChecked()&&g021t.isChecked()){
+                if (g015y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g016t.isChecked()&&g018t.isChecked()&&g020t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 66
