@@ -322,223 +322,223 @@ public class TypeQuestion extends AppCompatActivity {
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 81
-                if (g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()){
+                if (g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g020t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 82
-                if (g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()){
+                if (g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g019t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 83
-                if (g017y.isChecked()&&g018y.isChecked()&&g021y.isChecked()){
+                if (g017y.isChecked()&&g018y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g019t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 84
-                if (g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g018t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 85
-                if (g017y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g017y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g018t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 86
-                if (g017y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g017y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g018t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 87
-                if (g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 88
-                if (g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 89
-                if (g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 90
-                if (g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g018t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 91
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019t.isChecked()&&g020t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 92
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g018t.isChecked()&&g020t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 93
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g020y.isChecked()&&g018t.isChecked()&&g019t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 94
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g021y.isChecked()&&g018t.isChecked()&&g019t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 95
-                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g017t.isChecked()&&g020t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 96
-                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g017t.isChecked()&&g019t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 97
-                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g021y.isChecked()&&g017t.isChecked()&&g019t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 98
-                if (g015y.isChecked()&&g016y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g017t.isChecked()&&g018t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 99
-                if (g015y.isChecked()&&g016y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g017t.isChecked()&&g018t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 100
-                if (g015y.isChecked()&&g016y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g017t.isChecked()&&g018t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 101
-                if (g015y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()){
+                if (g015y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g016t.isChecked()&&g020t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 102
-                if (g015y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g016t.isChecked()&&g019t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 103
-                if (g015y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g021y.isChecked()&&g016t.isChecked()&&g019t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 104
-                if (g015y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g016t.isChecked()&&g018t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 105
-                if (g015y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g016t.isChecked()&&g018t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 106
-                if (g015y.isChecked()&&g017y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g017y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g016t.isChecked()&&g018t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 107
-                if (g015y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 108
-                if (g015y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 109
-                if (g015y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 110
-                if (g015y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g018t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 111
-                if (g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()){
+                if (g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g015t.isChecked()&&g020t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 112
-                if (g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()){
+                if (g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g015t.isChecked()&&g019t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 113
-                if (g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g021y.isChecked()){
+                if (g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g019t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 114
-                if (g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g015t.isChecked()&&g018t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 115
-                if (g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g018t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 116
-                if (g016y.isChecked()&&g017y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g016y.isChecked()&&g017y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g018t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 117
-                if (g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g015t.isChecked()&&g017t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 118
-                if (g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g017t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 119
-                if (g016y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g016y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g017t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 120
-                if (g016y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g016y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g017t.isChecked()&&g018t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 121
-                if (g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 122
-                if (g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 123
-                if (g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 124
-                if (g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g018t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 125
-                if (g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 126
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 127
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g019t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 128
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g021y.isChecked()&&g019t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 129
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g018t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 130
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g018t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 131
-                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g018t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 132
-                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g017t.isChecked()&&g021t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 133
-                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g021y.isChecked()&&g017t.isChecked()&&g020t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 134
-                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g018y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g017t.isChecked()&&g019t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 135
-                if (g015y.isChecked()&&g016y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()){
+                if (g015y.isChecked()&&g016y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g017t.isChecked()&&g018t.isChecked()){
                     penyakit += " "+tipeKatatonik;
                 }
                 //rule 136
