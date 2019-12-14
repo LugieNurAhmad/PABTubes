@@ -37,4 +37,127 @@
         <b>7. Tipe Depresi Pasca Skizofrenia</b></string>
     <string name="login">Login</string>
     <string name="dftr">Sudah Punya Akun?</string>
+    <string name="terapi_umum">\tTerapi pada Skizofrenia memerlukan waktu relatif lama berbulan bahkan bertahun,
+    hal ini dimaksudkan untuk menekan sekecil mungkin kekambuhan (relapse). Perkembangan
+    di dalam metode terapi penderita Skizofrenia (dan juga penderita psikosis lainnya) sudah
+    sedemikian maju, sehingga penderita tidak lagi mengalami pemasungan atau perawatan di
+    Rumah Sakit Jiwa (Mental Hospital) bertahun-tahun sehingga merupakan \"pasien
+    inventaris\" bahkan ada yang tinggal hingga akhir hayatnya.
+    \n\n\tTerapi yang komprehensif dan holistik atau terpadu dewasa ini sudah dikembangkan
+    sehingga penderita Skizofrenia tidak lagi mengalami diskriminasi bahkan metodenya lebih
+    manusiawi daripada masa sebelumnya. Terapi yang dimaksud meliputi terapi dengan obat-
+    obatan anti Skizofrenia (psikofarmaka), psikoterapi, terapi psikososial, dan terapi
+    psikoreligius.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_psikofarmaka">Psikofarmaka</string>
+    <string name="tab_psikoreligius">Terapi Psikoreligius</string>
+    <string name="tab_psikososial">Terapi Psikososial</string>
+    <string name="tab_psikoterapi">Psikoterapi</string>
+    <string name="isi_psikofarmaka">\t\tDewasa ini banyak jenis obat psikofarmaka yang digunakan untuk mengobati
+penderita Skizofrenia. Hingga sekarang belum ditemukan obat yang ideal, masing-masing
+jenis obat psikofarmaka ada kelebihan dan kekurangannya selain juga ada efek samping.
+Misalnya ada jenis psikofarmaka yang lebih berkhasiat menghilangkan gejala negatif
+Skizofrenia daripada gejala positif Skizofrenia atau sebaliknya, ada juga yang lebih cepat
+menimbulkan efek samping dan lain sebagainya
+\n\t\tBerbagai jenis obat yang beredar di pasaran hanya dapat diperoleh dengan resep
+dokter. Sebagaimana telah diuraikan dimuka bahwa gangguan jiwa Skizofrenia cenderung
+berlanjut menahun dan kronis, oleh karenanya terapi obat psikofarmaka diberikan dalam
+jangka waktu relatif lama, berbulan bahkan bertahun; seolah-olah obat psikofarmaka yang
+diberikan itu dapat diumpamakan sebagai &quot;vitamin&quot; atau &quot;makanan tambahan&quot; rutin sehari-
+hari bagi penderita Skizofrenia. Atau dengan kata lain dengan terapi psikofarmaka ini
+sesungguhnya gangguan jiwa Skizofrenia itu dapat diobati dan disembuhkan dalam arti
+manageable dan controllable. Sebagai catatan, dapat dikemukakan bahwa terapi
+psikofarmaka tidak berarti penderita harus meminum obat seumur hidup, sebab kadang
+kala perjalanan gangguan jiwa Skizofrenia ini sewaktu-waktu dapat mengalami remisi
+(sembuh dengan sendirinya tanpa gejala) karena pada hakekatnya penyakit ini merupakan
+self limiting process.</string>
+    <string name="isi_psikoterapi">\t\tTerapi kejiwaan atau psikoterapi pada penderita Skizofrenia, baru dapat diberikan
+apabila penderita dengan terapi psikofarmaka diatas sudah mencapai tahapan di mana
+kemampuan menilai realitas (Reality Testing Ability/RTA) sudah kembali pulih dan
+pemahaman diri (insight) sudah baik. Psikoterapi diberikan denga catatan bahwa penderita
+masih tetap mendapat terapi psikofarmaka
+\n\nJenis Psikoterapi berdasarkan kebutuhan dan latar belakang penderita sebelum sakit
+(Pramorbid):
+\na) Psikoterapi Suportif
+\nJenis psikoterapi ini dimaksudkan untuk memberikan dorongan, semangat dan
+motivasi agar penderita tidak merasa putus asa dan semangat juangnya (fighting
+spirit) dalam menghadapi hidup ini tidak kendur dan menurun.
+\nb) Psikoterapi Re-edukatif
+\nJenis psikoterapi ini dimaksudkan untuk memberikan pendidikan ulang yang maksudnya memperbaiki kesalahan pendidikan diwaktu lalu dan juga dengan
+pendidikan ini dimaksudkan mengubah pola pendidikan lama dengan yang baru
+sehingga penderita lebih adaptif terhadap dunia luar.
+\nc) Psikoterapi Re-konstruktif
+\nJenis psikoterapi ini dimaksudkan untuk memperbaiki kembali (re-konstruksi)
+kepribadian yang telah mengalami keretakan menjadi kepribadian utuh seperti
+semula sebelum sakit.
+\nd) Psikoterapi Kognitif
+\nJenis psikoterapi ini dimaksudkan untuk memulihkan kembali fungsi kognitif (daya
+pikir dan daya ingat) rasional sehingga penderita mampu membedakan nilai-nilai
+moral etika, mana yang baik dan buruk, mana yang boleh dan tidak, mana yang halal
+dan haram dan lain sebagainya (discriminative judgment).
+\ne) Psikoterapi Psiko-dinamik
+\nJenis psikoterapi ini dimaksudkan untuk menganalisa dan menguraikan proses
+dinamika kejiwaan yang dapat menjelaskan seseorang yang jatuh sakit dan upaya
+untuk mencari jalan keluarnya. Dengan psikoterapi ini diharapkan penderita dapat
+memahami kelebihan dan kelemahan dirinya dan mampu menggunakan mekanisme
+pertahanan diri (defense mechanism) dengan baik.
+\nf) Psikoterapi Perilaku
+\nJenis psikoterapi ini dimaksudkan untuk memulihkan gangguan perilaku yang
+terganggu (maladaptif) menjadi perilaku yang adaptif (mampu menyesuaikan diri).
+Kemampuan adaptasi penderita perlu dipulihkan agar penderita mampu berfungsi
+kembali secara wajar dalam kehidupannya sehari-hari baik di rumah, di
+sekolah/kampus, di tempat kerja dan lingkungan sosialnya (selanjutnya baca Terapi
+Psikososial).
+\ng) Psikoterapi Keluarga
+\nJenis psikoterapi inin dimaksudkan untuk memulihkan hubungan penderita dengan
+keluarganya. Dengan psikoterapi ini diharapkan keluarga dapat memahami
+mengenai gangguan jiwa Skizofrenia dan dapat membantu proses penyembuhan
+penderita (selanjutnya baca bab VII : Peran Serta Keluarga).
+    \n\tSecara umum tujuan dari psikoterapi tersebut adalah untuk memperkuat struktur
+kepribadian, mematangkan kepribadian (maturing personality), memperkuat ego (ego
+strength), meningkatkan citra diri (self esteem), memulihkan kepercayaan diri (self
+confidence), yang semuanya itu untuk mencapai kehidupan yang. berarti dan bermanfaat
+(meaningfulness of life)</string>
+    <string name="isi_psikososial">\t\tSebagaimana telah diuraikan dimuka salah satu dampak dari gangguan jiwa
+Skizofrenia adalah terganggunya fungsi sosial penderita atau hendaya (impairment).
+Hendaya ini terjadi dalam berbagai bidang fungsi rutin kehidupan sehari-hari, seperti dalam
+bidang studi (sekolah/kuliah), pekerjaan, hubungan sosial dan perawatan diri. Sering pula
+diperlukan pengawasan agar kebutuhan gizi dan higiene terjamin, dan untuk melindungi
+penderita dari dari akibat buruk akibat hendaya kognitif, atau akibat tindakannya yang
+berdasarkan waham (delusi) atau sebagai respons atau tindak lanjtu terhadap halusinasinya.
+\n\t\tDengan terapi psikososial dimaksudkan pendeita agar mampu kembali beradaptasi
+dengan lingkungan sosial sekitarnya dan mampu merawat diri, mampu mandiri tidak tergantung pada orang lain sehingga tidak menjadi beban bagi keluarga dan masyarakat.
+Penderita selama menjalani terapi psikososial ini hendaknya masih tetap mengkonsumsi
+obat psikofarmaka sebagaimana juga halnya waktu menjalani psikoterapi. Kepada penderita
+diupayakan untuk tidak menyendiri, tidak melamun, banyak kegiatan dan kesibukan dan
+banyak bergaul (silaturahmi/sosialisasi).</string>
+    <string name="isi_psikoreligius">\t\tTerapi keagamaan (psikoreligius) terhadap penderita Skizofrenia ternyata
+mempunyai manfaat. Dari penelitian yang dilakukan, secara umum memang menunjukkan
+bahwa komitmen agama menunjukkan bahwa komitmen agama berhubungan dengan
+manfaatnya di bidang klinik (religious commitment is associated with clinical benefit).
+Larson, dkk (1982) dalam penelitiannya membandingkan keberhasilan terapi terhadap dua
+kelompok penderita Skizofrenia Kelompok pertama mendapat terapi yang konvensional
+(psikofarmaka) dan lain-lainnya serta mendapat terapi kegamaan. Kedua kelompok tersebut
+dirawat di Rumah Sakit Jiwa yang sama. Hasil perbandingannya ternyata cukup bermakna
+yaitu :
+\na) Gejala-gejala klinis gangguan jiwa Skizofrenia lebih cepat hilang pada kelompok
+kedua (plus terapi keagamaan) dibandingkan dengan kelompok pertama (minus
+terapi keagamaan).
+\nb) Pada kelompok kedua lamanya perawatan (long stay hospilization) lebih pendek dari
+pada kelompok pertama.
+\nc) Pada kelompok kedua hendaya (impairment) lebih cepat teratasi daripada kelompok
+pertama.
+\nd) Pada kelompok kedua kemampuan adaptasi lebih cepat daripada kelompok
+pertama.
+\n\t\tTerapi keagamaan yang dimaksudkan dalam penelitian di atas adalah berupa
+kegiatan ritual keagamaan seperti sembahyang, beroda, memanjatkan puji-pujian kepada
+Tuhan, ceramah keagamaan dan kajian Kitab Suci dan lain sebagainya.
+Sehubungan dengan hal tersebut di atas, maka bagi umat yang beragama bedoa dan
+berdzikir (mengingat Tuhan) dikala sedang menghadapi musibah (penyakit) merupakan
+upaya yang amat dianjurkan guna memperoleh ketenangan dan penyembuhan penyakit.
+Hal ini sesuai dengan hasil penelitian yang dilakukan oleh Snyderman (1966) yang
+berkesimpulan bahwa: \" <i>Terapi medis tanpa doa dan dzikir, tidak lengkap; doa dan dzikir
+            saja tanpa terapi medis, tidak efektif</i> \".</string>
 </resources>

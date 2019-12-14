@@ -8,13 +8,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.pabtubes.reminder.AlarmReminder;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class PenangananActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private CardView alarmReminder;
+    private CardView alarmReminder, terapiCard;
+    private Button Lreminder, Lterapi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,15 @@ public class PenangananActivity extends AppCompatActivity implements View.OnClic
 
         alarmReminder = (CardView) findViewById(R.id.alarmReminderCard);
         alarmReminder.setOnClickListener(this);
+
+        Lreminder = (Button) findViewById(R.id.btn_Lreminder);
+        Lreminder.setOnClickListener(this);
+
+        terapiCard = (CardView) findViewById(R.id.terapiCardv);
+        terapiCard.setOnClickListener(this);
+
+        Lterapi = (Button) findViewById(R.id.btn_Lterapi);
+        Lterapi.setOnClickListener(this);
 
         //code untuk Bottom Navigation Bar
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
@@ -52,7 +63,15 @@ public class PenangananActivity extends AppCompatActivity implements View.OnClic
 
     @Override
     public void onClick(View view) {
-        Intent alarmReminderIntent = new Intent(this, AlarmReminder.class);
-        startActivity(alarmReminderIntent);
+        Intent pindah;
+        switch (view.getId()){
+            case R.id.alarmReminderCard : pindah =new Intent(this, AlarmReminder.class);startActivity(pindah);break;
+            case R.id.terapiCardv: pindah = new Intent(this, Terapi.class);startActivity(pindah);break;
+            case R.id.btn_Lreminder : pindah =new Intent(this, AlarmReminder.class);startActivity(pindah);break;
+            case R.id.btn_Lterapi: pindah = new Intent(this, Terapi.class);startActivity(pindah);break;
+            default:break;
+//        Intent alarmReminderIntent = new Intent(this, AlarmReminder.class);
+//        startActivity(alarmReminderIntent);
+        }
     }
 }

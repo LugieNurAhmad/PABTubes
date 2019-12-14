@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profil"></activity>
+        <activity android:name=".Terapi"></activity>
+        <activity
+            android:name=".profil"
+            android:label="Profil"/>
         <activity android:name=".tes_paranoid" />
         <activity android:name=".tesquestion.TypeQuestion" />
         <activity
