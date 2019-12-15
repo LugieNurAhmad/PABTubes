@@ -36,7 +36,7 @@
             android:id="@+id/sParent"
             android:focusableInTouchMode="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:fillViewport="true">
 
             <LinearLayout
@@ -91,12 +91,12 @@
                 <ScrollView
                     android:id="@+id/sChild"
                     android:layout_width="wrap_content"
-                    android:layout_height="550dp"
+                    android:layout_height="800dp"
                     android:fillViewport="true">
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/pager"
                     android:layout_width="match_parent"
-                    android:layout_height="550dp"
+                    android:layout_height="800dp"
                     android:layout_below="@id/tab_layout"/>
                 </ScrollView>
             </LinearLayout>

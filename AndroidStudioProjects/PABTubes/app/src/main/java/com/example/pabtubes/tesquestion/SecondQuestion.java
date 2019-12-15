@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.pabtubes.R;
+import com.example.pabtubes.Terapi;
 
 public class SecondQuestion extends AppCompatActivity {
 
