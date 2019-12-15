@@ -38,17 +38,13 @@ public class TypeQuestion extends AppCompatActivity {
 //    private FirebaseAuth fAuth;
 //    private FirebaseFirestore FSdatabase;
 
-<<<<<<< HEAD
-    TypeQuestion(FirebaseFirestore FSdatabase){
-        this.FSdatabase = FSdatabase;
-    }
-///cek commit
-=======
+
 //    TypeQuestion(FirebaseFirestore FSdatabase){
 //        this.FSdatabase = FSdatabase;
 //    }
+///cek commit
 
->>>>>>> 26ab0b1a3fb11351c7b91433e345f9a536d128fa
+
 
 
     private String userID;
@@ -146,17 +142,12 @@ public class TypeQuestion extends AppCompatActivity {
 //                    }
 //                });
 
-<<<<<<< HEAD
-                Intent intent = new Intent(TypeQuestion.this, RekapData.class);
-                startActivity(intent);
-            }
-        });
-=======
-//                Intent intent = new Intent(this, RekapData.class);
+//
+//                Intent intent = new Intent(TypeQuestion.this, RekapData.class);
 //                startActivity(intent);
 //            }
 //        });
->>>>>>> 26ab0b1a3fb11351c7b91433e345f9a536d128fa
+
 
         Button diag = (Button)findViewById(R.id.cekBtnType);
         diag.setOnClickListener(new View.OnClickListener(){
