@@ -30,7 +30,7 @@ import java.util.Map;
 
 public class TypeQuestion extends AppCompatActivity {
 
-    public static final String TAG = "TyoeQuestion";
+    public static final String TAG = "TypeQuestion";
 
     private DatabaseReference databse;
 //    FirebaseAuth firebaseAuth;
@@ -41,7 +41,7 @@ public class TypeQuestion extends AppCompatActivity {
     TypeQuestion(FirebaseFirestore FSdatabase){
         this.FSdatabase = FSdatabase;
     }
-
+///cek commit
 
 
     private String userID;
@@ -139,8 +139,8 @@ public class TypeQuestion extends AppCompatActivity {
                     }
                 });
 
-//                Intent intent = new Intent(this, RekapData.class);
-//                startActivity(intent);
+                Intent intent = new Intent(TypeQuestion.this, RekapData.class);
+                startActivity(intent);
             }
         });
 

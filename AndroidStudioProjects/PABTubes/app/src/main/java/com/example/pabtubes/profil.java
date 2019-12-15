@@ -22,6 +22,7 @@ public class profil extends AppCompatActivity {
 
     //Deklarasi variabel Firebase
     private FirebaseAuth auth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
