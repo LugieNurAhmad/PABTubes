@@ -35,12 +35,12 @@ public class TypeQuestion extends AppCompatActivity {
     private DatabaseReference databse;
 //    FirebaseAuth firebaseAuth;
 
-    private FirebaseAuth fAuth;
-    private FirebaseFirestore FSdatabase;
+//    private FirebaseAuth fAuth;
+//    private FirebaseFirestore FSdatabase;
 
-    TypeQuestion(FirebaseFirestore FSdatabase){
-        this.FSdatabase = FSdatabase;
-    }
+//    TypeQuestion(FirebaseFirestore FSdatabase){
+//        this.FSdatabase = FSdatabase;
+//    }
 
 
 
@@ -115,34 +115,34 @@ public class TypeQuestion extends AppCompatActivity {
 
         final TextView penyakitM = (TextView)findViewById(R.id.penyakitId);
         penyakitM.setText("");
-
-        Button rekapData = (Button)findViewById(R.id.hasilBtn);
-        rekapData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                hasilDB= penyakitDB.getBytes().toString();
-
-                userID = fAuth.getCurrentUser().getUid();
-                DocumentReference documentUser = FSdatabase.collection("dara_penyakit").document(userID);
-                final Map<String, Object> user = new HashMap<>();
-                user.put("Penyakit", penyakitDB);
-
-                documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "OnSuccess: user profile is created for" + userID);
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.d(TAG, "onFailure: Error writing document"+e.toString());
-                    }
-                });
+//
+//        Button rekapData = (Button)findViewById(R.id.hasilBtn);
+//        rekapData.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                hasilDB= penyakitDB.getBytes().toString();
+//
+//                userID = fAuth.getCurrentUser().getUid();
+//                DocumentReference documentUser = FSdatabase.collection("dara_penyakit").document(userID);
+//                final Map<String, Object> user = new HashMap<>();
+//                user.put("Penyakit", penyakitDB);
+//
+//                documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+//                    @Override
+//                    public void onSuccess(Void aVoid) {
+//                        Log.d(TAG, "OnSuccess: user profile is created for" + userID);
+//                    }
+//                }).addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                        Log.d(TAG, "onFailure: Error writing document"+e.toString());
+//                    }
+//                });
 
 //                Intent intent = new Intent(this, RekapData.class);
 //                startActivity(intent);
-            }
-        });
+//            }
+//        });
 
         Button diag = (Button)findViewById(R.id.cekBtnType);
         diag.setOnClickListener(new View.OnClickListener(){
