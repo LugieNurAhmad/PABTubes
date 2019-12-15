@@ -30,7 +30,7 @@ import java.util.Map;
 
 public class TypeQuestion extends AppCompatActivity {
 
-    public static final String TAG = "TAG";
+    public static final String TAG = "TyoeQuestion";
 
     private DatabaseReference databse;
 //    FirebaseAuth firebaseAuth;
@@ -38,9 +38,15 @@ public class TypeQuestion extends AppCompatActivity {
     private FirebaseAuth fAuth;
     private FirebaseFirestore FSdatabase;
 
+    TypeQuestion(FirebaseFirestore FSdatabase){
+        this.FSdatabase = FSdatabase;
+    }
+
+
 
     private String userID;
     public String safe="Aman",paranoid="Paranoid", hebefenik="Heberefenik", katatonik="Katatonik", ter="Tak_Terperinci",residual="Residual",simplex="Simplex",pasca="Pasca", penyakitDB, hasilDB;
+    public String penyakit = "Diagnosis : \n";
 //    String aman = "Belum ada indikasi terkena Skizofrenia";
 //    String tipeParanoid = "Anda terkena Skizofrenia Paranoid";
 //    String tipeHeberefenik = "Anda terkena Skizofrenia Hebrefenik";
@@ -110,6 +116,33 @@ public class TypeQuestion extends AppCompatActivity {
         final TextView penyakitM = (TextView)findViewById(R.id.penyakitId);
         penyakitM.setText("");
 
+        Button rekapData = (Button)findViewById(R.id.hasilBtn);
+        rekapData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hasilDB= penyakitDB.getBytes().toString();
+
+                userID = fAuth.getCurrentUser().getUid();
+                DocumentReference documentUser = FSdatabase.collection("dara_penyakit").document(userID);
+                final Map<String, Object> user = new HashMap<>();
+                user.put("Penyakit", penyakitDB);
+
+                documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Log.d(TAG, "OnSuccess: user profile is created for" + userID);
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.d(TAG, "onFailure: Error writing document"+e.toString());
+                    }
+                });
+
+//                Intent intent = new Intent(this, RekapData.class);
+//                startActivity(intent);
+            }
+        });
 
         Button diag = (Button)findViewById(R.id.cekBtnType);
         diag.setOnClickListener(new View.OnClickListener(){
@@ -132,7 +165,7 @@ public class TypeQuestion extends AppCompatActivity {
                 //rule 26
                 if (g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()){
                     penyakit += " "+tipeParanoid;
-                    penyakitDB = "paranoid";
+//                    penyakitDB = "paranoid";
 
                 }
 
@@ -141,7 +174,7 @@ public class TypeQuestion extends AppCompatActivity {
                 //rule 27
                 if (g013y.isChecked()&&g014y.isChecked()){
                     penyakit += " "+tipeHeberefenik;
-                    penyakitDB = hebefenik;
+//                    penyakitDB = hebefenik;
                 }
 
 //                tipeKatatonik
@@ -747,29 +780,33 @@ public class TypeQuestion extends AppCompatActivity {
 
             }
         });
+
+
+
+
     }
 
-    public void submitDataRekap(View view){
-        hasilDB= penyakitDB.getBytes().toString();
-
-        userID = fAuth.getCurrentUser().getUid();
-        DocumentReference documentUser = FSdatabase.collection("Rekap_Data").document(userID);
-        final Map<String, Object> user = new HashMap<>();
-        user.put("Penyakit", hasilDB);
-
-        documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                Log.d(TAG, "OnSuccess: user profile is created for" + userID);
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.d(TAG, "onFailure: "+e.toString());
-            }
-        });
-
-        Intent intent = new Intent(this, RekapData.class);
-        startActivity(intent);
-    }
+//    public void submitDataRekap(View view){
+//        hasilDB= penyakitDB.getBytes().toString();
+//
+//        userID = fAuth.getCurrentUser().getUid();
+//        DocumentReference documentUser = FSdatabase.collection("dara_penyakit").document(userID);
+//        final Map<String, Object> user = new HashMap<>();
+//        user.put("Penyakit", penyakitDB);
+//
+//        documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+//            @Override
+//            public void onSuccess(Void aVoid) {
+//                Log.d(TAG, "OnSuccess: user profile is created for" + userID);
+//            }
+//        }).addOnFailureListener(new OnFailureListener() {
+//            @Override
+//            public void onFailure(@NonNull Exception e) {
+//                Log.d(TAG, "onFailure: Error writing document"+e.toString());
+//            }
+//        });
+//
+//        Intent intent = new Intent(this, RekapData.class);
+//        startActivity(intent);
+//    }
 }
