@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.pabtubes.R;
 
@@ -145,10 +146,26 @@ public class SecondQuestion extends AppCompatActivity {
                     penyakit += " "+aman;
                     cektipe.setVisibility(View.INVISIBLE);
                 }
+
+                //KALAU MASIH ADA YG BELUM DI JAWAB
+                if(!(g05y.isChecked()||g05t.isChecked())){
+                    Toast.makeText(getApplicationContext(), "Pertanyaan No 5  belum dijawab", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(!(g06y.isChecked()||g06t.isChecked())){
+                    Toast.makeText(getApplicationContext(), "Pertanyaan No 6 belum dijawab", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(!(g07y.isChecked()||g07t.isChecked())){
+                    Toast.makeText(getApplicationContext(), "Pertanyaan No 7 belum dijawab", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(!(g08y.isChecked()||g08t.isChecked())){
+                    Toast.makeText(getApplicationContext(), "Pertanyaan No 8 belum dijawab", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 pktM.setText(""+penyakit);
 
-//                if (penyakit.equals(skizo)){
-//                }
 
             }
         });

@@ -22,7 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pabtubes.tesquestion.SecondQuestion;
 
-//ada 3 class yang digunakan pada TesActivity (TesActivity, AdapterGejala, Model)
+//ada 3 class yang digunakan pada TesActivity (TesActivity, SecondQuestion, Typequestion)
 //2 layout(activity_test dan baris)
 public class TesActivity extends AppCompatActivity  {
 
@@ -125,6 +125,23 @@ public class TesActivity extends AppCompatActivity  {
                 //no
                 if (g01t.isChecked()&&g02t.isChecked()&&g03t.isChecked()&&g04t.isChecked()){
                     penyakit += " "+aman;
+                }
+                //KALAU MASIH ADA YG BELUM DI JAWAB
+                if(!(g01y.isChecked()||g01t.isChecked())){
+                    Toast.makeText(getApplicationContext(), "Pertanyaan No 1 belum dijawab", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(!(g02y.isChecked()||g02t.isChecked())){
+                    Toast.makeText(getApplicationContext(), "Pertanyaan No 2 belum dijawab", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(!(g03y.isChecked()||g03t.isChecked())){
+                    Toast.makeText(getApplicationContext(), "Pertanyaan No 3 belum dijawab", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(!(g04y.isChecked()||g04t.isChecked())){
+                    Toast.makeText(getApplicationContext(), "Pertanyaan No 4 belum dijawab", Toast.LENGTH_SHORT).show();
+                    return;
                 }
                 penyakitM.setText(""+penyakit);
 
