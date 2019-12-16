@@ -52,7 +52,7 @@ public class TypeQuestion extends AppCompatActivity {
 
 
     private String userID;
-    public String safe="Aman",paranoid=" Paranoid ", hebefenik=" Heberefenik ", katatonik=" Katatonik ", ter="Tak Terperinci ",residual=" Residual ",simplex=" Simplex ",pasca=" Pasca ", penyakitDB, hasilDB;
+    public String safe="Aman",paranoid=" Paranoid ", hebefenik=" Heberefenik ", katatonik=" Katatonik ", ter=" Tak Terperinci ",residual=" Residual ",simplex=" Simplex ",pasca=" Pasca ", penyakitDB = " ", tidakAda = " Tidak Terkena Skizofrenia", hasilDB;
     public String penyakit = "Diagnosis : \n";
 //    String aman = "Belum ada indikasi terkena Skizofrenia";
 //    String tipeParanoid = "Anda terkena Skizofrenia Paranoid";
@@ -189,7 +189,8 @@ public class TypeQuestion extends AppCompatActivity {
                 String tipeTer = "Anda terkena Skizofrenia Tak terinnci";
                 String tipeResidual = "Anda terkena Skizofrenia Residual";
                 String tipeSimpleks = "Anda terkena Skizofrenia Simpleks";
-                String tipePasca = "Anda terkena Depresi Pasca Skizofrenial";
+                String tipePasca = "Anda terkena Depresi Pasca Skizofrenia";
+                String tipeTidak = "Anda tidak terkena Skizofrenia Apapun";
 
 //                tipeParanoid
 
@@ -916,6 +917,13 @@ public class TypeQuestion extends AppCompatActivity {
                 if (g030y.isChecked()&&g031y.isChecked()&&g032y.isChecked()){
                     penyakit += " "+tipePasca;
                     penyakitDB += pasca;
+                }
+                //&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g018t.isChecked()&&g019t.isChecked()&&g020t.isChecked()&&g021t.isChecked()
+                //&&g022t.isChecked()&&g023t.isChecked()&&g024t.isChecked()&&g025t.isChecked()&&g026t.isChecked()&&g027t.isChecked()&&g028t.isChecked()
+//                &&g029t.isChecked()&&g030t.isChecked()&&g031t.isChecked()
+                if (g09t.isChecked()&&g010t.isChecked()&&g011t.isChecked()&&g012t.isChecked()&&g013t.isChecked()&&g014t.isChecked()&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g018t.isChecked()&&g019t.isChecked()&&g020t.isChecked()&&g021t.isChecked()&&g022t.isChecked()&&g023t.isChecked()&&g024t.isChecked()&&g025t.isChecked()&&g026t.isChecked()&&g027t.isChecked()&&g028t.isChecked() &&g029t.isChecked()&&g030t.isChecked()&&g031t.isChecked()&&g032t.isChecked()){
+                    penyakit += " "+ tipeTidak;
+                    penyakitDB +=  tidakAda;
                 }
                 //no
 //                if (g01t.isChecked()&&g02t.isChecked()&&g03t.isChecked()&&g04t.isChecked()){
