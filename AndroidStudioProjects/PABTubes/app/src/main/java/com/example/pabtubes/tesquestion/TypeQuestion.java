@@ -197,7 +197,7 @@ public class TypeQuestion extends AppCompatActivity {
                 //rule 26
                 if (g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()){
                     penyakit += " "+tipeParanoid;
-                    penyakitDB = paranoid;
+                    penyakitDB += paranoid;
 
                 }
 
