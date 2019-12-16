@@ -15,8 +15,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class PenangananActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private CardView alarmReminder, terapiCard;
-    private Button Lreminder, Lterapi;
+    private CardView alarmReminder, terapiCard, rekapCard;
+    private Button Lreminder, Lterapi, Lrekap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +34,11 @@ public class PenangananActivity extends AppCompatActivity implements View.OnClic
         Lterapi = (Button) findViewById(R.id.btn_Lterapi);
         Lterapi.setOnClickListener(this);
 
+        rekapCard =(CardView) findViewById(R.id.RekapCardv);
+        rekapCard.setOnClickListener(this);
+
+        Lrekap = (Button) findViewById(R.id.btn_Lrekap);
+        Lrekap.setOnClickListener(this);
         //code untuk Bottom Navigation Bar
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -67,8 +72,10 @@ public class PenangananActivity extends AppCompatActivity implements View.OnClic
         switch (view.getId()){
             case R.id.alarmReminderCard : pindah =new Intent(this, AlarmReminder.class);startActivity(pindah);break;
             case R.id.terapiCardv: pindah = new Intent(this, Terapi.class);startActivity(pindah);break;
+            case R.id.RekapCardv: pindah = new Intent(this, RekapData.class);startActivity(pindah);break;
             case R.id.btn_Lreminder : pindah =new Intent(this, AlarmReminder.class);startActivity(pindah);break;
             case R.id.btn_Lterapi: pindah = new Intent(this, Terapi.class);startActivity(pindah);break;
+            case R.id.btn_Lrekap: pindah = new Intent(this, RekapData.class);startActivity(pindah);break;
             default:break;
 //        Intent alarmReminderIntent = new Intent(this, AlarmReminder.class);
 //        startActivity(alarmReminderIntent);

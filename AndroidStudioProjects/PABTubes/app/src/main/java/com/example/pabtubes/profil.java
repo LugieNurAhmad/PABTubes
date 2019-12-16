@@ -180,7 +180,7 @@ public class profil extends AppCompatActivity {
 //                    Toast.makeText(getApplicationContext(), "nama : " + userID, Toast.LENGTH_SHORT).show();
 //
 //                }
-//                AdapterProfil adapterProfil = new AdapterProfil(profil.this, listProfil);
+//                AdapterRekap adapterProfil = new AdapterRekap(profil.this, listProfil);
 //                ListViewprofil.setAdapter(adapterProfil);
 //
 //            }

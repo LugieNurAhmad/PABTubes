@@ -8,10 +8,16 @@
     tools:context=".RekapData">
 
     <TextView
+        android:id="@+id/title_rekap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Rekam Medis Pasien"
         android:textSize="20sp"
         android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView_Rekap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"/>
 
 </RelativeLayout>
