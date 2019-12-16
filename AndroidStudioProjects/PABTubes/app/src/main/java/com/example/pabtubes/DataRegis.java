@@ -9,7 +9,7 @@ public class DataRegis implements Serializable {
     private String nama, email, pass, phone, gender;
     private String key;
 
-    public DataRegis(){
+    public DataRegis(String nama, String email, String phone){
 
     }
 

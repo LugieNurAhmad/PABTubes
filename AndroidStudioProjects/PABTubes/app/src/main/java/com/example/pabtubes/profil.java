@@ -191,4 +191,8 @@ public class profil extends AppCompatActivity {
 //            }
 //        });
     }
+
+    public void goEditProfil(View view) {
+        startActivity(new Intent(profil.this, profilEdit.class));
+    }
 }
