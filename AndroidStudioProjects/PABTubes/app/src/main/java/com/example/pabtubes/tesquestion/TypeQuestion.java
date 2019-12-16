@@ -49,7 +49,7 @@ public class TypeQuestion extends AppCompatActivity {
 
 
     private String userID;
-    public String safe="Aman",paranoid="Paranoid", hebefenik="Heberefenik", katatonik="Katatonik", ter="Tak_Terperinci",residual="Residual",simplex="Simplex",pasca="Pasca", penyakitDB, hasilDB;
+    public String safe="Aman",paranoid=" Paranoid ", hebefenik=" Heberefenik ", katatonik=" Katatonik ", ter="T ak_Terperinci ",residual=" Residual ",simplex=" Simplex ",pasca=" Pasca ", penyakitDB, hasilDB;
     public String penyakit = "Diagnosis : \n";
 //    String aman = "Belum ada indikasi terkena Skizofrenia";
 //    String tipeParanoid = "Anda terkena Skizofrenia Paranoid";
@@ -173,7 +173,7 @@ public class TypeQuestion extends AppCompatActivity {
                 //rule 26
                 if (g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()){
                     penyakit += " "+tipeParanoid;
-                    penyakitDB = paranoid;
+                    penyakitDB += paranoid;
 
                 }
 
@@ -182,7 +182,7 @@ public class TypeQuestion extends AppCompatActivity {
                 //rule 27
                 if (g013y.isChecked()&&g014y.isChecked()){
                     penyakit += " "+tipeHeberefenik;
-                    penyakitDB = hebefenik;
+                    penyakitDB += hebefenik;
                 }
 
 //                tipeKatatonik
@@ -871,7 +871,7 @@ public class TypeQuestion extends AppCompatActivity {
                 if (g022y.isChecked()){
                     penyakit += " "+tipeTer;
 
-                    penyakitDB = ter;
+                    penyakitDB += ter;
                 }
 
 //                tipeResidual
@@ -880,19 +880,19 @@ public class TypeQuestion extends AppCompatActivity {
                 if (g023y.isChecked()&&g024y.isChecked()&&g025y.isChecked()){
                     penyakit += " "+tipeResidual;
 
-                    penyakitDB = residual;
+                    penyakitDB += residual;
                 }
 
 
                 //rule 157
                 if (g026y.isChecked()&&g027y.isChecked()&&g028y.isChecked()&&g029y.isChecked()){
                     penyakit += " "+tipeSimpleks;
-                    penyakitDB = simplex;
+                    penyakitDB += simplex;
                 }
                 //rule 158
                 if (g030y.isChecked()&&g031y.isChecked()&&g032y.isChecked()){
                     penyakit += " "+tipePasca;
-                    penyakitDB = pasca;
+                    penyakitDB += pasca;
                 }
                 //no
 //                if (g01t.isChecked()&&g02t.isChecked()&&g03t.isChecked()&&g04t.isChecked()){
