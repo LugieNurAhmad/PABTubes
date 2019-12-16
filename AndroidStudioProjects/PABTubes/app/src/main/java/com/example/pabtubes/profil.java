@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -23,6 +24,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -35,19 +37,33 @@ public class profil extends AppCompatActivity {
     //Deklarasi variabel Firebase
     private FirebaseAuth auth;
 
-    String userKey;
     FirebaseDatabase dbP;
     DatabaseReference databaseProfil;
-    ListView ListViewprofil;
-    List<DataRegis> listProfil;
+//    ListView ListViewprofil;
+//    List<DataRegis> listProfil;
+
+    private FirebaseUser user;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
+
+//        auth = FirebaseAuth.getInstance();
+//        dbP = FirebaseDatabase.getInstance();
+//        databaseProfil = dbP.getReference("Data Akun");
+//        FirebaseUser user = auth.getCurrentUser();
+//        userKey = user.getUid();
+
+
         //get firebase out instance
         auth = FirebaseAuth.getInstance();
+        user = auth.getCurrentUser();
+
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         //Inisialisasi btn_logout
         btn_logout = (Button) findViewById(R.id.btn_logout);
@@ -63,8 +79,35 @@ public class profil extends AppCompatActivity {
 //        });
 
 
-        ListViewprofil = (ListView)findViewById(R.id.listVProvil);
-        listProfil = new ArrayList<>();
+        final TextView tvNama = (TextView) findViewById(R.id.tvIsiNama);
+        final TextView tvEmail = (TextView) findViewById(R.id.tvIsiEmail);
+        final TextView tvGender = (TextView) findViewById(R.id.tvIsiGender);
+        //Read Proofil
+        dbP = FirebaseDatabase.getInstance();
+        databaseProfil = dbP.getReference("Data Akun");
+        Query query = databaseProfil.orderByChild("email").equalTo(user.getEmail());
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot dP : dataSnapshot.getChildren()){
+                    String ReadNama = "" + dP.child("nama").getValue();
+                    String ReadEmail = "" + dP.child("email").getValue();
+                    String ReadGender = "" + dP.child("gender").getValue();
+
+                    tvNama.setText(ReadNama);
+                    tvEmail.setText(ReadEmail);
+                    tvGender.setText(ReadGender);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+//        ListViewprofil = (ListView)findViewById(R.id.listVProvil);
+//        listProfil = new ArrayList<>();
 
         //code untuk Bottom Navigation Bar
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
@@ -101,6 +144,7 @@ public class profil extends AppCompatActivity {
         inflater.inflate(R.menu.menu_profil, menu);
         return true;
     }
+    //Logout
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
@@ -122,34 +166,29 @@ public class profil extends AppCompatActivity {
 //        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 //        databaseProfil = FirebaseDatabase.getInstance().getReference(uid);
 
-        auth = FirebaseAuth.getInstance();
-        dbP = FirebaseDatabase.getInstance();
-        databaseProfil = dbP.getReference("Data Akun");
-        FirebaseUser user = auth.getCurrentUser();
-        userKey = user.getUid();
 
-        databaseProfil.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String userID = auth.getInstance().getCurrentUser().getUid();
-
-                listProfil.clear();
-                for (DataSnapshot profilSnapshot : dataSnapshot.getChildren()){
-                    DataRegis profiL = profilSnapshot.getValue(DataRegis.class);
-
-                    listProfil.add(profiL);
-                    Toast.makeText(getApplicationContext(), "nama : " + userID, Toast.LENGTH_SHORT).show();
-
-                }
-                AdapterProfil adapterProfil = new AdapterProfil(profil.this, listProfil);
-                ListViewprofil.setAdapter(adapterProfil);
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
+//        databaseProfil.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                String userID = auth.getInstance().getCurrentUser().getUid();
+//
+//                listProfil.clear();
+//                for (DataSnapshot profilSnapshot : dataSnapshot.getChildren()){
+//                    DataRegis profiL = profilSnapshot.getValue(DataRegis.class);
+//
+//                    listProfil.add(profiL);
+//                    Toast.makeText(getApplicationContext(), "nama : " + userID, Toast.LENGTH_SHORT).show();
+//
+//                }
+//                AdapterProfil adapterProfil = new AdapterProfil(profil.this, listProfil);
+//                ListViewprofil.setAdapter(adapterProfil);
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
     }
 }
