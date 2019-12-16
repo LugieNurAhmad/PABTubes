@@ -49,7 +49,7 @@ public class TypeQuestion extends AppCompatActivity {
 
 
     private String userID;
-    public String safe="Aman",paranoid=" Paranoid ", hebefenik=" Heberefenik ", katatonik=" Katatonik ", ter="T ak_Terperinci ",residual=" Residual ",simplex=" Simplex ",pasca=" Pasca ", penyakitDB, hasilDB;
+    public String safe="Aman",paranoid=" Paranoid ", hebefenik=" Heberefenik ", katatonik=" Katatonik ", ter="Tak Terperinci ",residual=" Residual ",simplex=" Simplex ",pasca=" Pasca ", penyakitDB, hasilDB;
     public String penyakit = "Diagnosis : \n";
 //    String aman = "Belum ada indikasi terkena Skizofrenia";
 //    String tipeParanoid = "Anda terkena Skizofrenia Paranoid";
