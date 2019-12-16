@@ -26,6 +26,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -124,14 +127,34 @@ public class TypeQuestion extends AppCompatActivity {
         rekapData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                hasilDB= penyakitDB.getBytes().toString();
+
+//                waktu
+//                String cHour,cMinute,cSecond,cjam;
+
+//                hasilDB= penyakitDB.getBytes().toString();
 
                 FSdatabase = FirebaseFirestore.getInstance();
+                Calendar calendar = Calendar.getInstance();
+                int cHour = calendar.get(Calendar.HOUR);
+                int cMinute = calendar.get(Calendar.MINUTE);
+                int cSecond = calendar.get(Calendar.SECOND);
+                String jam = Integer.toString(cHour);
+                String menit = Integer.toString(cMinute);
+                String detik = Integer.toString(cSecond);
+                String Waktu =" "+ jam +":" + menit + ":" + detik;
+
+
+                String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+                currentDate += Waktu;
+//                DateFormat df = new SimpleDateFormat("dd ")
+//                TextView textViewDate = findViewById(R.id.text_view_date);
+//                textViewDate.setText(currentDate);
 
                 userID = fAuth.getInstance().getCurrentUser().getUid();
-                DocumentReference documentUser = FSdatabase.collection("data_penyakit").document(userID);
+                DocumentReference documentUser = FSdatabase.collection("data_penyakit").document(userID).collection("waktu").document(currentDate);
                 final Map<String, Object> user = new HashMap<>();
                 user.put("Penyakit", penyakitDB);
+//                user.put("Waktu", currentDate);
 
                 documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
