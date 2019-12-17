@@ -1,5 +1,6 @@
 package com.example.pabtubes;
 
+import com.google.firebase.Timestamp;
 import com.google.firebase.database.Exclude;
 
 import java.io.Serializable;
@@ -9,6 +10,8 @@ class DataRekap implements Serializable {
     private String id;
 
     private String Penyakit;
+
+    private String Waktu;
 
     public DataRekap() {
 
@@ -28,5 +31,9 @@ class DataRekap implements Serializable {
 
     public String getPenyakit() {
         return Penyakit;
+    }
+
+    public String getWaktu() {
+        return Waktu;
     }
 }

@@ -175,7 +175,8 @@
                 android:layout_gravity="center"
                 android:gravity="center">
             <androidx.cardview.widget.CardView
-                android:id="@+id/diagnosis2"
+                android:id="@+id/diagn2Cardv"
+                android:visibility="invisible"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.pabtubes.tesquestion.SecondQuestion;
 
@@ -44,6 +45,7 @@ public class TesActivity extends AppCompatActivity  {
         final TextView penyakitM = (TextView)findViewById(R.id.penyakitId);
         penyakitM.setText("");
 
+        final CardView diag1Card = (CardView)findViewById(R.id.diag1CardV);
         final Button lanjutDiag = (Button)findViewById(R.id.ljt_diagUmum);
         lanjutDiag.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,6 +148,8 @@ public class TesActivity extends AppCompatActivity  {
                 penyakitM.setText(""+penyakit);
 
                 lanjutDiag.setVisibility(View.VISIBLE);
+
+                diag1Card.setVisibility(View.VISIBLE);
 
             }
         });
