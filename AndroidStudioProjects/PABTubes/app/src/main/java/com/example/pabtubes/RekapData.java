@@ -70,7 +70,7 @@ public class RekapData extends AppCompatActivity {
                         DataRekap p = d.toObject(DataRekap.class);
                         p.setId(d.getId());
                         dataRekapList.add(p);
-                        Toast.makeText(getApplicationContext(), "nama : " + p, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(getApplicationContext(), "Hasil telah ditambahkan : " + p, Toast.LENGTH_SHORT).show();
                     }
                     adapterRekap.notifyDataSetChanged();
                 }

@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 public class AdapterRekap extends RecyclerView.Adapter<AdapterRekap.RekapViewHolder> {
@@ -26,17 +27,18 @@ public class AdapterRekap extends RecyclerView.Adapter<AdapterRekap.RekapViewHol
     }
     @NonNull
     @Override
-    public AdapterRekap.RekapViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RekapViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new RekapViewHolder(
                 LayoutInflater.from(mCtx).inflate(R.layout.listlayout_profil, parent, false)
         );
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AdapterRekap.RekapViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RekapViewHolder holder, int position) {
         DataRekap dataRekap = dataRekapList.get(position);
 
         holder.namaRekap.setText(dataRekap.getPenyakit());
+        holder.dateRekap.setText(dataRekap.getWaktu());
     }
 
     @Override
@@ -45,11 +47,12 @@ public class AdapterRekap extends RecyclerView.Adapter<AdapterRekap.RekapViewHol
     }
 
     class RekapViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener{
+        TextView dateRekap;
         TextView namaRekap;
         public RekapViewHolder(View itemView){
             super(itemView);
             namaRekap = itemView.findViewById(R.id.textRekap);
-
+            dateRekap = itemView.findViewById(R.id.textWaktu);
             itemView.setOnClickListener(this);
         }
 

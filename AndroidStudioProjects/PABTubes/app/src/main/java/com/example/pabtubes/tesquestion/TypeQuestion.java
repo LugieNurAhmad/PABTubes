@@ -2,6 +2,7 @@ package com.example.pabtubes.tesquestion;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 //import com.example.pabtubes.LoginActivity;
 import com.example.pabtubes.R;
@@ -123,7 +125,9 @@ public class TypeQuestion extends AppCompatActivity {
         final TextView penyakitM = (TextView)findViewById(R.id.penyakitId);
         penyakitM.setText("");
 
-        Button rekapData = (Button)findViewById(R.id.hasilBtn);
+        final CardView diag3Card = (CardView)findViewById(R.id.diag3CardV);
+
+        final Button rekapData = (Button)findViewById(R.id.hasilBtn);
         rekapData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -154,7 +158,7 @@ public class TypeQuestion extends AppCompatActivity {
                 DocumentReference documentUser = FSdatabase.collection("data_penyakit").document(userID).collection("waktu").document(currentDate);
                 final Map<String, Object> user = new HashMap<>();
                 user.put("Penyakit", penyakitDB);
-//                user.put("Waktu", currentDate);
+                user.put("Waktu", currentDate);
 
                 documentUser.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -168,6 +172,7 @@ public class TypeQuestion extends AppCompatActivity {
                     }
                 });
 
+                Toast.makeText(getApplicationContext(), "Data telah ditambahkan", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(TypeQuestion.this, RekapData.class);
                 startActivity(intent);
@@ -200,6 +205,7 @@ public class TypeQuestion extends AppCompatActivity {
                     penyakitDB += paranoid;
 
                 }
+//                g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()&&g013y.isChecked()&&g014y.isChecked()
 
 //                tipeHeberefenik
 
@@ -899,7 +905,7 @@ public class TypeQuestion extends AppCompatActivity {
                 }
 
 //                tipeResidual
-
+//                g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()&&g013y.isChecked()&&g014y.isChecked()&&g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g022y.isChecked()&&g023y.isChecked()&&g024y.isChecked()&&g025y.isChecked()
                 //rule 156
                 if (g023y.isChecked()&&g024y.isChecked()&&g025y.isChecked()){
                     penyakit += " "+tipeResidual;
@@ -907,7 +913,7 @@ public class TypeQuestion extends AppCompatActivity {
                     penyakitDB += residual;
                 }
 
-
+//                g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()&&g013y.isChecked()&&g014y.isChecked()&&g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g022y.isChecked()&&g023y.isChecked()&&g024y.isChecked()&&g025y.isChecked()&&g026y.isChecked()&&g027y.isChecked()&&g028y.isChecked()&&g029y.isChecked()&&g030y.isChecked()&&g031y.isChecked()&&g032y.isChecked()
                 //rule 157
                 if (g026y.isChecked()&&g027y.isChecked()&&g028y.isChecked()&&g029y.isChecked()){
                     penyakit += " "+tipeSimpleks;
@@ -917,6 +923,10 @@ public class TypeQuestion extends AppCompatActivity {
                 if (g030y.isChecked()&&g031y.isChecked()&&g032y.isChecked()){
                     penyakit += " "+tipePasca;
                     penyakitDB += pasca;
+                }
+                if (g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()&&g013y.isChecked()&&g014y.isChecked()&&g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g022y.isChecked()&&g023y.isChecked()&&g024y.isChecked()&&g025y.isChecked()&&g026y.isChecked()&&g027y.isChecked()&&g028y.isChecked()&&g029y.isChecked()&&g030y.isChecked()&&g031y.isChecked()&&g032y.isChecked()){
+                    penyakit += " "+tipeTer;
+                    penyakitDB += ter;
                 }
                 //&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g018t.isChecked()&&g019t.isChecked()&&g020t.isChecked()&&g021t.isChecked()
                 //&&g022t.isChecked()&&g023t.isChecked()&&g024t.isChecked()&&g025t.isChecked()&&g026t.isChecked()&&g027t.isChecked()&&g028t.isChecked()
@@ -931,6 +941,8 @@ public class TypeQuestion extends AppCompatActivity {
 //               }
                 penyakitM.setText(""+penyakit);
 
+                rekapData.setVisibility(View.VISIBLE);
+                diag3Card.setVisibility(View.VISIBLE);
 //                String penyakitdb = penyakitM.setText("" + penyakit);
 
 

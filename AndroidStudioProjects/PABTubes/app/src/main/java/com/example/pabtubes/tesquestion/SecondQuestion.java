@@ -1,6 +1,7 @@
 package com.example.pabtubes.tesquestion;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,6 +40,7 @@ public class SecondQuestion extends AppCompatActivity {
         final TextView pktM = (TextView)findViewById(R.id.pktId);
         pktM.setText("");
 
+        final CardView diag2Card = (CardView)findViewById(R.id.diagn2Cardv);
         final Button cektipe = (Button)findViewById(R.id.cekTipe);
         cektipe.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -166,6 +168,8 @@ public class SecondQuestion extends AppCompatActivity {
                     return;
                 }
                 pktM.setText(""+penyakit);
+
+                diag2Card.setVisibility(View.VISIBLE);
 
 
             }

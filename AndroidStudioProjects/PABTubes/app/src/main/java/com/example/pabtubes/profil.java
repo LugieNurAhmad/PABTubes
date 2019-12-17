@@ -17,6 +17,8 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.example.pabtubes.reminder.AlarmReminder;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -66,7 +68,7 @@ public class profil extends AppCompatActivity {
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         //Inisialisasi btn_logout
-        btn_logout = (Button) findViewById(R.id.btn_logout);
+//        btn_logout = (Button) findViewById(R.id.btn_logout);
 
         //Saat btn_logout diklik
 //        btn_logout.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +79,26 @@ public class profil extends AppCompatActivity {
 //                finish();
 //            }
 //        });
+
+        //Delete Account
+        final Button btDeleteAcc = (Button) findViewById(R.id.btn_deleteAcc);
+        btDeleteAcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(user != null){
+                    user.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                Toast.makeText(profil.this, "Akun telah berhasil dihapus",Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(profil.this, LoginActivity.class));
+                                finish();
+                            }
+                        }
+                    });
+                }
+            }
+        });
 
 
         final TextView tvNama = (TextView) findViewById(R.id.tvIsiNama);
