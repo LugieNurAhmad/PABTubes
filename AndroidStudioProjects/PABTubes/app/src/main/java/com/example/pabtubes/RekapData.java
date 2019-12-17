@@ -77,6 +77,45 @@ public class RekapData extends AppCompatActivity {
             }
 
         });
+//        db = FirebaseFirestore.getInstance();
+//        db.collection("data_penyakit").document(userID).collection("waktu").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+//            @Override
+//            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+//                String data ="";
+//                if (!queryDocumentSnapshots.isEmpty()){
+//                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+//                    for (DocumentSnapshot d :list){
+//                        DataRekap p = d.toObject(DataRekap.class);
+//                        p.setId(d.getId());
+//                        String setId = p.getId();
+//
+//
+//                        data += "\n\n";
+////                        dataRekapList.add(p);
+////                        Toast.makeText(getApplicationContext(), "nama : " + p, Toast.LENGTH_SHORT).show();
+//                    }
+//                    adapterRekap.notifyDataSetChanged();
+//                }
+//            }
+//
+//        });
+//        db = FirebaseFirestore.getInstance();
+//        db.collection("data_penyakit").document(userID).collection("waktu").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+//            @Override
+//            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+//                if (!queryDocumentSnapshots.isEmpty()){
+//                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+//                    for (DocumentSnapshot d :list){
+//                        DataRekap p = d.toObject(DataRekap.class);
+//                        p.setId(d.getId());
+//                        dataRekapList.add(p);
+//                        Toast.makeText(getApplicationContext(), "nama : " + p, Toast.LENGTH_SHORT).show();
+//                    }
+//                    adapterRekap.notifyDataSetChanged();
+//                }
+//            }
+//
+//        });
 //        db.collection("data_penyakit").get()
 //                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
 //                    @Override
@@ -94,6 +133,7 @@ public class RekapData extends AppCompatActivity {
 //                    }
 //                });
     }
+
 }
 
 //    @Override

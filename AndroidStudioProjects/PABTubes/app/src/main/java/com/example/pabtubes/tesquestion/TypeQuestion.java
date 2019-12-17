@@ -21,6 +21,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 //import com.google.firebase.auth.AuthResult;
 //import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.firestore.DocumentReference;
@@ -151,7 +152,10 @@ public class TypeQuestion extends AppCompatActivity {
 //                textViewDate.setText(currentDate);
 
                 userID = fAuth.getInstance().getCurrentUser().getUid();
+//                String id = FSdatabase.collection("waktu").document().getId();
                 DocumentReference documentUser = FSdatabase.collection("data_penyakit").document(userID).collection("waktu").document(currentDate);
+
+//                DocumentReference documentUser = FSdatabase.collection("data_penyakit").document(userID).collection("waktu").document(id);
                 final Map<String, Object> user = new HashMap<>();
                 user.put("Penyakit", penyakitDB);
 //                user.put("Waktu", currentDate);

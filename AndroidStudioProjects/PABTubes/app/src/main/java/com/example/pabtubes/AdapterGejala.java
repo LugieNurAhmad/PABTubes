@@ -38,7 +38,7 @@ class AdapterGejala extends ArrayAdapter<Model> {
             convertView = inflator.inflate(R.layout.baris, null);
             viewHolder = new ViewHolder();
             viewHolder.text = (TextView) convertView.findViewById(R.id.label);
-            viewHolder.checkBox = (CheckBox) convertView.findViewById(R.id.checkB);
+//            viewHolder.checkBox = (CheckBox) convertView.findViewById(R.id.checkB);
             viewHolder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
                 @Override
