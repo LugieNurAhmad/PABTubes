@@ -930,7 +930,7 @@ public class TypeQuestion extends AppCompatActivity {
                 }
                 if (g09y.isChecked()&&g010y.isChecked()&&g011y.isChecked()&&g012y.isChecked()&&g013y.isChecked()&&g014y.isChecked()&&g015y.isChecked()&&g016y.isChecked()&&g017y.isChecked()&&g018y.isChecked()&&g019y.isChecked()&&g020y.isChecked()&&g021y.isChecked()&&g022y.isChecked()&&g023y.isChecked()&&g024y.isChecked()&&g025y.isChecked()&&g026y.isChecked()&&g027y.isChecked()&&g028y.isChecked()&&g029y.isChecked()&&g030y.isChecked()&&g031y.isChecked()&&g032y.isChecked()){
                     penyakit += " "+tipeTer;
-                    penyakitDB += ter;
+                    penyakitDB = ter;
                 }
                 //&&g015t.isChecked()&&g016t.isChecked()&&g017t.isChecked()&&g018t.isChecked()&&g019t.isChecked()&&g020t.isChecked()&&g021t.isChecked()
                 //&&g022t.isChecked()&&g023t.isChecked()&&g024t.isChecked()&&g025t.isChecked()&&g026t.isChecked()&&g027t.isChecked()&&g028t.isChecked()
